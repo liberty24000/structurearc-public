@@ -19,6 +19,12 @@ Dernière version : **1.2.1** — page *Releases* → `StructureArc_1.2.1_x64-se
 - Le modèle d'IA n'est pas dans l'installateur ; il est installé ou importé par l'utilisateur, avec vérification d'empreinte.
 - Usage gratuit, sans exploitation commerciale par autrui : voir [LICENSE.md](LICENSE.md).
 
+## Édité par
+**[le-bon.contact](https://le-bon.contact)** — assistance et dépannage informatique à Agen.
+
+- Site de l'entreprise : <https://le-bon.contact>
+- Projet personnel et présentation : <https://kevin-moniaux.com>
+
 ## Contenu du dépôt
 - `releases.json` — index lisible par machine (versions signées) ; `update/latest.json` — manifeste de la dernière version signée.
 - `versions/vX.Y.Z/` — présentation, nouveautés, limites et empreintes de chaque version.
