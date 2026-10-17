@@ -1,8 +1,8 @@
 # Vérifier un téléchargement
 
-1. Téléchargez l'installateur depuis la page **Releases** de ce dépôt.
-2. Calculez son empreinte : `Get-FileHash .\StructureArc_1.2.1_x64-setup.exe -Algorithm SHA256`.
-3. Comparez avec `versions/v1.2.1/SHA256SUMS.txt` **et** `releases.json` : elles doivent être identiques.
-4. Signature Windows : `Get-AuthenticodeSignature .\StructureArc_1.2.1_x64-setup.exe`. Tant que l'état est `NotSigned`, Windows affichera un avertissement d'éditeur inconnu : seule l'empreinte SHA-256 prouve l'intégrité du fichier.
+Les installateurs publiés ici sont **signés** (signature Windows Authenticode, certificat Certum, horodatée). Vérifiez toujours deux choses :
 
-Les rapports de preuves (`versions/*/preuves`) ont le nom de machine, le nom d'utilisateur et les chemins locaux remplacés ; les originaux sont conservés par le propriétaire.
+1. **La signature** : `Get-AuthenticodeSignature .\StructureArc_X.Y.Z_x64-setup.exe` doit afficher `Status : Valid`. Un fichier dont l'état n'est pas `Valid` ne vient pas de nous : ne l'exécutez pas. (Sur l'explorateur : clic droit → Propriétés → Signatures numériques.)
+2. **L'empreinte SHA-256** : `Get-FileHash .\StructureArc_X.Y.Z_x64-setup.exe -Algorithm SHA256`, à comparer avec `versions/vX.Y.Z/SHA256SUMS.txt` **et** `releases.json` : elles doivent être identiques.
+
+Les installateurs ont été signés après leur fabrication : l'empreinte du fichier signé est celle publiée ici (elle peut différer de l'empreinte d'origine citée dans d'anciennes notes).
