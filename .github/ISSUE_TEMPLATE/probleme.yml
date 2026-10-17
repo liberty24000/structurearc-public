@@ -1,0 +1,22 @@
+name: Signaler un problème
+description: Quelque chose ne fonctionne pas comme prévu
+labels: [problème]
+body:
+  - type: input
+    id: version
+    attributes: { label: Version de StructureArc, placeholder: "ex. 1.2.1" }
+    validations: { required: true }
+  - type: input
+    id: windows
+    attributes: { label: Version de Windows, placeholder: "ex. Windows 11 24H2" }
+    validations: { required: true }
+  - type: input
+    id: materiel
+    attributes: { label: "Mémoire (Go) et carte graphique", placeholder: "ex. 16 Go, NVIDIA GTX 1070" }
+  - type: textarea
+    id: etapes
+    attributes: { label: Que s'est-il passé ? Comment le reproduire ?, description: "N'envoyez ni clé, ni mot de passe, ni document confidentiel." }
+    validations: { required: true }
+  - type: textarea
+    id: attendu
+    attributes: { label: Qu'attendiez-vous ? }

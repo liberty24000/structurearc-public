@@ -1,0 +1,8 @@
+name: Poser une question ou proposer une idée
+description: Question d'utilisation, suggestion
+labels: [question]
+body:
+  - type: textarea
+    id: texte
+    attributes: { label: Votre question ou votre idée }
+    validations: { required: true }
