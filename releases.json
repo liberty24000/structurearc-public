@@ -4,6 +4,16 @@
  "note": "Seuls les installateurs signés (Authenticode, statut Valid) sont publiés.",
  "releases": [
   {
+   "version": "1.2.2",
+   "tag": "v1.2.2",
+   "installer": "StructureArc_1.2.2_x64-setup.exe",
+   "size": 23432248,
+   "sha256": "198844b331a6bd49e044d406f56174d09a56ead7afe9c693c8f679529271d7ca",
+   "published_at": "2026-10-17T20:42:23.575Z",
+   "signed": true,
+   "notes": "versions/v1.2.2/LIMITES_V1_2_2.md"
+  },
+  {
    "version": "1.2.1",
    "tag": "v1.2.1",
    "installer": "StructureArc_1.2.1_x64-setup.exe",

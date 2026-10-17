@@ -1,6 +1,14 @@
 # Journal des versions de StructureArc
 
-Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs sont **non signés** pour l'instant : vérifiez toujours l'empreinte SHA-256 (voir `VERIFIER.md`).
+Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
+
+## V1.2.2 — 17 octobre 2026
+**Contrats, projets liés en lecture seule, vérification de mise à jour.**
+- **Contrats** (écran *Agents*) : décrivez un module (entrées, sorties, chemins autorisés, capacités, règles à vérifier). Un contrat enregistré reste « proposé » tant que vous ne l'acceptez pas ; une règle en prose est signalée comme non vérifiable automatiquement ; changer le contenu public sans changer la version est refusé, et une rupture de compatibilité exige une nouvelle version majeure (avec la liste des contrats impactés).
+- **Projets liés en lecture seule** (écran *Permissions*) : un projet peut lire (fichiers, recherche) un autre projet, **seulement après votre confirmation**, dans un seul sens, et **seulement ce que les autorisations de l'autre projet permettent**. Chaque lecture est journalisée des deux côtés, sans contenu. Le chat peut s'en servir via trois outils de lecture.
+- **Mise à jour** (écran *Paramètres*) : si vous indiquez l'adresse (HTTPS) d'un manifeste de version, StructureArc peut vous dire qu'une version plus récente existe et la **télécharger après votre confirmation**, avec vérification de la taille et de l'empreinte SHA-256 et sauvegarde préalable de votre base. Il **n'installe rien automatiquement**. Ce n'est pas encore la mise à jour complète.
+- Installateur **signé** (Authenticode, horodaté). Seul l'installateur est signé pour l'instant, pas encore l'application installée.
+- Limites : voir le fichier LIMITES de cette version (un seul ordinateur testé ; mise à jour réelle Windows non testée).
 
 ## V1.2.1 — 17 octobre 2026
 **États de tâche et compatibilité visible.**
