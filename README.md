@@ -5,10 +5,11 @@ Application de bureau **locale** pour Windows 11 (x64) : organiser de gros proje
 > **Ce dépôt ne contient que les publications** (installateurs signés en pièces jointes de Release, empreintes, notes et limites de chaque version). Aucun code source n'est publié ici.
 
 ## Télécharger
-Dernière version : **1.2.4** — page *Releases* → `StructureArc_1.2.4_x64-setup.exe`. Vérifiez toujours la signature et l'empreinte : voir [VERIFIER.md](VERIFIER.md).
+Dernière version : **1.3.0** — page *Releases* → `StructureArc_1.3.0_x64-setup.exe`. Vérifiez toujours la signature et l'empreinte : voir [VERIFIER.md](VERIFIER.md).
 
 | Version | Installateur signé | Taille | SHA-256 | Détails |
 |---|---|---|---|---|
+| 1.3.0 | `StructureArc_1.3.0_x64-setup.exe` | 22.4 Mo | `557400b5409540fc…` | [notes et limites](versions/v1.3.0/) |
 | 1.2.4 | `StructureArc_1.2.4_x64-setup.exe` | 22.4 Mo | `363d436dea3db456…` | [notes et limites](versions/v1.2.4/) |
 | 1.2.3 | `StructureArc_1.2.3_x64-setup.exe` | 22.4 Mo | `40da6e568df47068…` | [notes et limites](versions/v1.2.3/) |
 | 1.2.2 | `StructureArc_1.2.2_x64-setup.exe` | 22.3 Mo | `198844b331a6bd49…` | [notes et limites](versions/v1.2.2/) |

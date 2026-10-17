@@ -2,6 +2,14 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.0 — 18 octobre 2026
+**Catalogue de modèles et choix fondé sur des mesures.**
+- **8 modèles de 6 familles** (Qwen, Llama, Gemma, Phi, SmolLM2, Granite) au catalogue, chacun avec sa source, sa version, sa taille, son empreinte SHA-256 et sa licence. Rien n'est téléchargé sans votre accord et chaque fichier est vérifié avant usage.
+- **Le choix du modèle repose sur des mesures** (recherche, résumé, architecture, code exécuté et testé, correction, appels d'outils) et non plus sur la seule taille du fichier. Un modèle qui réussit moins de 4 appels d'outils sur 5 n'est jamais choisi pour une tâche qui en exige. Ces mesures viennent d'un seul ordinateur et d'un essai : ce sont des indications, pas des garanties.
+- La **matrice de compatibilité** (écran *IA*) affiche la qualité, les appels d'outils et la vitesse mesurés pour chaque modèle, ou « non mesuré » quand ce n'est pas le cas.
+- Le modèle recommandé par défaut reste un modèle sous licence libre (Apache-2.0 ou MIT) qui sait appeler des outils.
+- Limites : voir le fichier LIMITES de cette version (un seul ordinateur testé ; les six nouveaux modèles sont installables mais pas livrés dans l'installateur ; installation hors-ligne et gros modèles sur petite carte graphique : versions suivantes).
+
 ## V1.2.4 — 18 octobre 2026
 **Retour d'information sur la mise à jour.**
 - Au premier démarrage après une mise à jour, StructureArc vous le dit : « StructureArc a été mis à jour vers la version X. Vos projets et réglages sont intacts. »
