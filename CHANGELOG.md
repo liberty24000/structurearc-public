@@ -2,6 +2,14 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.2.3 — 17 octobre 2026
+**Mise à jour en un clic.**
+- StructureArc **détecte** qu'une version plus récente est publiée (une requête HTTPS au dépôt public, au plus une fois par jour, sans donnée personnelle ; désactivable dans *Paramètres*) et affiche une bannière **« Mettre à jour »**.
+- Un clic suffit : téléchargement, **vérification de l'empreinte et de la signature de l'éditeur**, sauvegarde de votre base de données, installation, redémarrage. Vos projets et réglages ne sont pas modifiés. Un installateur non signé ou altéré est **refusé** : rien n'est lancé.
+- L'exécutable **et** l'installateur sont maintenant **signés** ; l'éditeur affiché est « le-bon.contact » ; la **licence** s'affiche à l'installation.
+- Pour profiter de la mise à jour en un clic, installez cette version une première fois ; les versions précédentes ne savent pas se mettre à jour toutes seules.
+- Limites : voir le fichier LIMITES de cette version (un seul ordinateur testé ; première mise à jour entre deux versions publiées pas encore observée).
+
 ## V1.2.2 — 17 octobre 2026
 **Contrats, projets liés en lecture seule, vérification de mise à jour.**
 - **Contrats** (écran *Agents*) : décrivez un module (entrées, sorties, chemins autorisés, capacités, règles à vérifier). Un contrat enregistré reste « proposé » tant que vous ne l'acceptez pas ; une règle en prose est signalée comme non vérifiable automatiquement ; changer le contenu public sans changer la version est refusé, et une rupture de compatibilité exige une nouvelle version majeure (avec la liste des contrats impactés).

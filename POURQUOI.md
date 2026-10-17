@@ -33,7 +33,12 @@ Voici ce que nous faisons, et pour chaque point **ce qui est prouvé** (scénari
 - Pas de Docker, de Python, de Git ni d'abonnement ; **aucun compte, aucune télémétrie** ; vos données restent sur votre ordinateur ; les secrets (clés, mots de passe) sont **masqués** avant d'être montrés à l'IA ou écrits dans un journal.
 - Interface en **19 langues**, installateur en 18 langues.
 
-## 7. Pensé pour de gros projets
+## 7. Des mises à jour en un clic, mais sûres
+- StructureArc **détecte** qu'une version plus récente existe et propose « Mettre à jour » : un clic suffit. Avant d'installer quoi que ce soit, il **vérifie l'empreinte et la signature de l'éditeur** du fichier téléchargé, **sauvegarde votre base de données**, puis redémarre. Un fichier non signé, altéré ou signé par un autre éditeur est **refusé** : rien n'est lancé.
+- La détection se fait au plus une fois par jour, ne transmet aucune donnée personnelle et se désactive dans les paramètres.
+- *Prouvé* : mise à jour réelle sur une vraie installation (33 contrôles) — refus d'un installateur non signé et d'un installateur altéré, mise à jour, relance automatique, projets et réglages conservés. Pas encore observé entre deux versions publiées (voir les limites).
+
+## 8. Pensé pour de gros projets
 - Indexation, recherche par symbole, graphe de dépendances, contexte **borné et sourcé** pour que de petits modèles restent utiles sans lire tout le projet.
 - *À venir dans la V1.2.2* : **contrats** de modules versionnés et validés (avec détection des ruptures de compatibilité) et **liaisons en lecture seule** entre projets, toujours explicites, jamais implicites.
 
