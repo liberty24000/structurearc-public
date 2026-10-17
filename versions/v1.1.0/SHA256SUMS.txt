@@ -1,0 +1,1 @@
+658e6271cfe3eb5e2e41cd8af9daf0338b9e8d313b93555248d858eb57f7e64a *StructureArc_1.1.0_x64-setup.exe

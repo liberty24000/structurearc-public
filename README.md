@@ -5,9 +5,14 @@ Application de bureau **locale** pour Windows 11 (x64) : organiser de gros proje
 > **Ce dépôt ne contient que les publications** (installateurs signés en pièces jointes de Release, empreintes, notes et limites de chaque version). Aucun code source n'est publié ici.
 
 ## Télécharger
-**Aucun installateur n'est téléchargeable pour l'instant** : les installateurs ne sont publiés qu'une fois **signés**.
+Dernière version : **1.2.1** — page *Releases* → `StructureArc_1.2.1_x64-setup.exe`. Vérifiez toujours la signature et l'empreinte : voir [VERIFIER.md](VERIFIER.md).
 
-En attente de signature (documentées, pas encore téléchargeables) : v1.2.1, v1.2.0, v1.1.0, v1.0.0.
+| Version | Installateur signé | Taille | SHA-256 | Détails |
+|---|---|---|---|---|
+| 1.2.1 | `StructureArc_1.2.1_x64-setup.exe` | 22.3 Mo | `bd0f9027f1124489…` | [notes et limites](versions/v1.2.1/) |
+| 1.2.0 | `StructureArc_1.2.0_x64-setup.exe` | 22.3 Mo | `8f217a503585a17a…` | [notes et limites](versions/v1.2.0/) |
+| 1.1.0 | `StructureArc_1.1.0_x64-setup.exe` | 22.2 Mo | `658e6271cfe3eb5e…` | [notes et limites](versions/v1.1.0/) |
+| 1.0.0 | `StructureArc_1.0.0_x64-setup.exe` | 22.2 Mo | `4b8bf6bc63da27df…` | [notes et limites](versions/v1.0.0/) |
 
 ## État honnête
 - Testé sur **un seul** ordinateur (Windows 11, 16 Go, GTX 1070). Chaque version a son fichier de limites (`LIMITES_*.md`) : lisez-le avant d'installer.

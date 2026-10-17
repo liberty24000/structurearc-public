@@ -2,11 +2,47 @@
  "project": "StructureArc",
  "repository": "liberty24000/structurearc-public",
  "note": "Seuls les installateurs signés (Authenticode, statut Valid) sont publiés.",
- "releases": [],
- "pending_signature": [
-  "1.2.1",
-  "1.2.0",
-  "1.1.0",
-  "1.0.0"
- ]
+ "releases": [
+  {
+   "version": "1.2.1",
+   "tag": "v1.2.1",
+   "installer": "StructureArc_1.2.1_x64-setup.exe",
+   "size": 23340928,
+   "sha256": "bd0f9027f11244894fff4e4b3c2afad449e2c47c730d084be524af4f279a4643",
+   "published_at": "2026-10-17T17:58:15.364Z",
+   "signed": true,
+   "notes": "versions/v1.2.1/LIMITES_V1_2_1.md"
+  },
+  {
+   "version": "1.2.0",
+   "tag": "v1.2.0",
+   "installer": "StructureArc_1.2.0_x64-setup.exe",
+   "size": 23337160,
+   "sha256": "8f217a503585a17ae29e49630aed55effaf1b80df7d0d565e4ecd3cb3f3723fd",
+   "published_at": "2026-10-17T17:04:53.965Z",
+   "signed": true,
+   "notes": "versions/v1.2.0/LIMITES_V1_2.md"
+  },
+  {
+   "version": "1.1.0",
+   "tag": "v1.1.0",
+   "installer": "StructureArc_1.1.0_x64-setup.exe",
+   "size": 23295688,
+   "sha256": "658e6271cfe3eb5e2e41cd8af9daf0338b9e8d313b93555248d858eb57f7e64a",
+   "published_at": "2026-10-17T15:47:44.552Z",
+   "signed": true,
+   "notes": "versions/v1.1.0/LIMITES_V1_1.md"
+  },
+  {
+   "version": "1.0.0",
+   "tag": "v1.0.0",
+   "installer": "StructureArc_1.0.0_x64-setup.exe",
+   "size": 23292888,
+   "sha256": "4b8bf6bc63da27df39445e44864607af11bdce90ac72335f091a14bfa627b5e9",
+   "published_at": "2026-10-17T12:49:04.141Z",
+   "signed": true,
+   "notes": "versions/v1.0.0/LIMITES_V1_0.md"
+  }
+ ],
+ "pending_signature": []
 }
