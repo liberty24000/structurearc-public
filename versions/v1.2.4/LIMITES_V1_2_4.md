@@ -10,10 +10,14 @@ Règle suivie : aucune ligne « prouvé » sans commande ni rapport réel dans `
 - Décision « mise à jour réussie / n'a pas abouti / rien » : tests unitaires (8 cas : réussie, trop tôt pour conclure, échec après 10 minutes, mise à jour par une autre voie, premier démarrage, retour arrière, trace périmée) ; bannières testées (Vitest).
 - `test.ps1` PASS global au second passage (478 tests Rust, 149 Vitest). Installateur 16/16 (octets de l'exécutable expliqués : marqueur Tauri + signature). Contrats et projets liés 35/35 ; états de tâche 14/14 ; agents 18/18 ; routage 17/17 ; terminal autonome 17/17 ; import GGUF 16/16 ; GPU 14/14 ; changement de modèle 13/13 ; HTTPS réseau local 20/20 ; zone de notification 11/11 (+ 9/9) ; runtime embarqué 8/8.
 
+## Addendum (18 oct. 2026, après la publication) — mise à jour de bout en bout via Internet
+- `update-internet --from-version=1.2.3` (rapport `preuves/rapports/20261017223731-43900__update-internet.result.json`) : **18/18** avec les fichiers RÉELLEMENT publiés, sans serveur local ni mode test : l'installateur 1.2.3 est téléchargé depuis la Release publique (SHA-256 identique à `releases.json`, signé), installé, puis l'application lit le VRAI manifeste public, télécharge l'installateur 1.2.4 sur GitHub, vérifie sa signature, se ferme, est relancée par l'installateur ; « Applications installées » passe de **1.2.3 à 1.2.4** ; même dossier de données ; projet et réglage conservés ; sauvegarde SQLite faite ; exécutable installé signé ; ensuite « vous avez la dernière version » ; désinstallation propre.
+- Observation réelle : le fichier `update/latest.json` est servi par le cache de GitHub (`raw.githubusercontent.com`, `max-age=300`) ; juste après une publication, certains points d'accès annoncent encore l'ancienne version pendant quelques minutes (constaté pendant ce test). La détection d'une nouvelle version peut donc avoir jusqu'à environ 5 minutes de retard ; sans conséquence.
+
 ## NON prouvé ou partiel
 | Sujet | Réalité |
 |---|---|
-| **Mise à jour via Internet** | Le serveur de test est local. Le test avec les fichiers RÉELLEMENT publiés (dépôt public GitHub) est exécuté juste après la publication de cette version ; son résultat est ajouté en addendum ci-dessous. |
+| **Mise à jour via Internet** | **Prouvée après la publication** (addendum ci-dessous). |
 | **Message « mise à jour réussie »** | Non observable pour la transition 1.2.3 → 1.2.4 (la 1.2.3 ne mémorise ni sa version ni la mise à jour lancée) ; observable à partir de la 1.2.4 (prochaine mise à jour). Le code est prouvé par tests unitaires et Vitest, pas par une vraie mise à jour. |
 | **Retour arrière** | La base est sauvegardée (3 dernières) mais les binaires ne sont pas restaurés automatiquement ; la version précédente se réinstalle depuis les Releases publiques. Pas de signature du manifeste lui-même. |
 | **Registre après désinstallation** | Voulu par l'installateur : l'emplacement et la langue restent tant que « supprimer les données de l'application » n'est pas coché. |
