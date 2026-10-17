@@ -2,6 +2,13 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.2.4 — 18 octobre 2026
+**Retour d'information sur la mise à jour.**
+- Au premier démarrage après une mise à jour, StructureArc vous le dit : « StructureArc a été mis à jour vers la version X. Vos projets et réglages sont intacts. »
+- Si une mise à jour lancée n'a pas abouti, il le dit aussi honnêtement (« vous utilisez toujours la version X, vos données n'ont pas été modifiées, vous pouvez réessayer ») au lieu de rester silencieux.
+- Première mise à jour réelle **entre deux versions publiées** (1.2.3 vers 1.2.4) vérifiée : le numéro de version change, l'application est relancée, vos projets et réglages sont conservés.
+- Limites : voir le fichier LIMITES de cette version (un seul ordinateur testé).
+
 ## V1.2.3 — 17 octobre 2026
 **Mise à jour en un clic.**
 - StructureArc **détecte** qu'une version plus récente est publiée (une requête HTTPS au dépôt public, au plus une fois par jour, sans donnée personnelle ; désactivable dans *Paramètres*) et affiche une bannière **« Mettre à jour »**.
