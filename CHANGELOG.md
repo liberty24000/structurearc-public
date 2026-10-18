@@ -2,6 +2,13 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.3 — 19 octobre 2026
+**Calibration automatique de l'IA pour votre machine.**
+- Après le téléchargement d'un modèle, l'application mesure le meilleur réglage de votre carte graphique (nombre de couches) sans dépasser les limites de charge ; résultat par modèle et par carte, modifiable dans l'écran IA. Sur le PC de test, le Qwen3.5 4B passe de 13 à 38 jetons/s.
+- Modèle à experts Qwen3 30B-A3B (2 bits) proposé comme **expérimental** (verrouillage manuel, 10 Go) : ≈ 16 jetons/s mais lecture des longs textes lente.
+- Garde de charge GPU plus fine ; scripts Windows optionnels d'allègement (simulation par défaut).
+- Toutes les mesures viennent d'un seul PC : voir `LIMITES_V1_3_3.md`.
+
 ## V1.3.2 — 18 octobre 2026
 **Installateur hors-ligne, actions proposées sur la machine, vérification des réponses.**
 - **Installateur hors-ligne** (≈ 1,1 Go) : application, runtime et un petit modèle (Qwen2.5 1,5B) déjà inclus, vérifiés à l'installation ; l'installateur standard reste disponible.
