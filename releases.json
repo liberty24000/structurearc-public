@@ -4,6 +4,21 @@
  "note": "Seuls les installateurs signés (Authenticode, statut Valid) sont publiés.",
  "releases": [
   {
+   "version": "1.3.2",
+   "tag": "v1.3.2",
+   "installer": "StructureArc_1.3.2_x64-setup.exe",
+   "size": 23586208,
+   "sha256": "cd925a1ae42ac9d5b478b0592422c88bd06717a0d29f495b4267b5fd02149b5c",
+   "published_at": "2026-10-18T15:32:46.748Z",
+   "signed": true,
+   "notes": "versions/v1.3.2/LIMITES_V1_3_2.md",
+   "offline": {
+    "file": "StructureArc_1.3.2_x64-offline-setup.exe",
+    "size": 1118337792,
+    "sha256": "c75a00283aaf94f5ab84c7dcbb00f8239813ab7bbf738acc8d0a894f0a3c86eb"
+   }
+  },
+  {
    "version": "1.3.1",
    "tag": "v1.3.1",
    "installer": "StructureArc_1.3.1_x64-setup.exe",
@@ -11,7 +26,8 @@
    "sha256": "b99e83d13157efd02bf2a394a10140d612c2189aca12d192028deab5978f8cb8",
    "published_at": "2026-10-18T08:46:06.081Z",
    "signed": true,
-   "notes": "versions/v1.3.1/LIMITES_V1_3_1.md"
+   "notes": "versions/v1.3.1/LIMITES_V1_3_1.md",
+   "offline": null
   },
   {
    "version": "1.3.0",
@@ -21,7 +37,8 @@
    "sha256": "557400b5409540fc925b68756e710578033b0f6f3eda2a2fa5bb7e3fc9366fde",
    "published_at": "2026-10-17T23:52:18.729Z",
    "signed": true,
-   "notes": "versions/v1.3.0/LIMITES_V1_3.md"
+   "notes": "versions/v1.3.0/LIMITES_V1_3.md",
+   "offline": null
   },
   {
    "version": "1.2.4",
@@ -31,7 +48,8 @@
    "sha256": "363d436dea3db45649b32ecbb8a9ed1ca7119705866f8ec032c31f1191831627",
    "published_at": "2026-10-17T22:33:02.582Z",
    "signed": true,
-   "notes": "versions/v1.2.4/LIMITES_V1_2_4.md"
+   "notes": "versions/v1.2.4/LIMITES_V1_2_4.md",
+   "offline": null
   },
   {
    "version": "1.2.3",
@@ -41,7 +59,8 @@
    "sha256": "40da6e568df4706843e687018c7c23ad6d54a5919e03a57a5f1120f8950c9cef",
    "published_at": "2026-10-17T21:47:09.715Z",
    "signed": true,
-   "notes": "versions/v1.2.3/LIMITES_V1_2_3.md"
+   "notes": "versions/v1.2.3/LIMITES_V1_2_3.md",
+   "offline": null
   },
   {
    "version": "1.2.2",
@@ -51,7 +70,8 @@
    "sha256": "198844b331a6bd49e044d406f56174d09a56ead7afe9c693c8f679529271d7ca",
    "published_at": "2026-10-17T20:42:23.575Z",
    "signed": true,
-   "notes": "versions/v1.2.2/LIMITES_V1_2_2.md"
+   "notes": "versions/v1.2.2/LIMITES_V1_2_2.md",
+   "offline": null
   },
   {
    "version": "1.2.1",
@@ -61,7 +81,8 @@
    "sha256": "bd0f9027f11244894fff4e4b3c2afad449e2c47c730d084be524af4f279a4643",
    "published_at": "2026-10-17T17:58:15.364Z",
    "signed": true,
-   "notes": "versions/v1.2.1/LIMITES_V1_2_1.md"
+   "notes": "versions/v1.2.1/LIMITES_V1_2_1.md",
+   "offline": null
   },
   {
    "version": "1.2.0",
@@ -71,7 +92,8 @@
    "sha256": "8f217a503585a17ae29e49630aed55effaf1b80df7d0d565e4ecd3cb3f3723fd",
    "published_at": "2026-10-17T17:04:53.965Z",
    "signed": true,
-   "notes": "versions/v1.2.0/LIMITES_V1_2.md"
+   "notes": "versions/v1.2.0/LIMITES_V1_2.md",
+   "offline": null
   },
   {
    "version": "1.1.0",
@@ -81,7 +103,8 @@
    "sha256": "658e6271cfe3eb5e2e41cd8af9daf0338b9e8d313b93555248d858eb57f7e64a",
    "published_at": "2026-10-17T15:47:44.552Z",
    "signed": true,
-   "notes": "versions/v1.1.0/LIMITES_V1_1.md"
+   "notes": "versions/v1.1.0/LIMITES_V1_1.md",
+   "offline": null
   },
   {
    "version": "1.0.0",
@@ -91,7 +114,8 @@
    "sha256": "4b8bf6bc63da27df39445e44864607af11bdce90ac72335f091a14bfa627b5e9",
    "published_at": "2026-10-17T12:49:04.141Z",
    "signed": true,
-   "notes": "versions/v1.0.0/LIMITES_V1_0.md"
+   "notes": "versions/v1.0.0/LIMITES_V1_0.md",
+   "offline": null
   }
  ],
  "pending_signature": []

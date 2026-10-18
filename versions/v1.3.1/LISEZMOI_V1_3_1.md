@@ -12,7 +12,7 @@ Application de bureau **locale** (Windows 11 x64) pour travailler sur de gros pr
 - **Missions autonomes** : `/mission <objectif>` (ou le bouton « Lancer une mission autonome ») : le chat enchaîne les appels d'outils (fichiers, terminal, web, propositions de modifications) dans les limites des autorisations du projet, 30 appels et 20 minutes au plus ; une modification n'est jamais écrite sans votre approbation.
 - **Recherche web** : outils `web_search` et `web_fetch` ; le niveau « autonome » de l'autorisation web est un choix explicite par projet (sinon chaque lecture demande votre confirmation).
 - **Connecteurs MCP** (écran Autorisations) : vous déclarez un serveur d'outils externe ; il est désactivé par défaut et chaque outil est « à confirmer » tant que vous ne le passez pas en « automatique ».
-- **Capture d'écran + OCR local** (autorisation « capture / OCR », lecture) : le chat peut lire le TEXTE affiché à l'écran ; aucune image n'est conservée ni envoyée.
+- **Capture d'écran + OCR local** (autorisation « capture / OCR », lecture) : l'outil est prévu pour lire localement du texte ; la limite V1.3.1 ne publie pas encore de scénario complet en vraie fenêtre utilisateur. Aucune image n'est conservée ni envoyée.
 - **Agents de mission** : option (désactivée par défaut) pour créer automatiquement les agents et compétences proposés pendant une mission.
 - **Mise à jour plus sûre** : verrou entre processus, refus d'une architecture ou d'une version trop ancienne avant tout téléchargement.
 - **Interface** : les onglets qui ne tiennent pas dans la fenêtre passent sous « Plus » ; explications longues repliées.

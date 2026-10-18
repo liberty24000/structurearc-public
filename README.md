@@ -1,14 +1,15 @@
 # StructureArc
 
-Application de bureau **locale** pour Windows 11 (x64) : organiser de gros projets, discuter avec une IA locale par projet, avec permissions séparées, journal d'audit et arrêt d'urgence. Aucun compte, aucune télémétrie.
+Application de bureau **locale** pour Windows 11 (x64) : confier de gros projets à une IA locale (missions, outils disponibles dans le build, méthode de découpage pour petits modèles), avec un cadre de permissions que vous réglez. Aucun compte, aucune télémétrie.
 
 > **Ce dépôt ne contient que les publications** (installateurs signés en pièces jointes de Release, empreintes, notes et limites de chaque version). Aucun code source n'est publié ici.
 
 ## Télécharger
-Dernière version : **1.3.1** — page *Releases* → `StructureArc_1.3.1_x64-setup.exe`. Vérifiez toujours la signature et l'empreinte : voir [VERIFIER.md](VERIFIER.md).
+Dernière version : **1.3.2** — page *Releases* → `StructureArc_1.3.2_x64-setup.exe`. Vérifiez toujours la signature et l'empreinte : voir [VERIFIER.md](VERIFIER.md).
 
 | Version | Installateur signé | Taille | SHA-256 | Détails |
 |---|---|---|---|---|
+| 1.3.2 | `StructureArc_1.3.2_x64-setup.exe` | 22.5 Mo | `cd925a1ae42ac9d5…` | [notes et limites](versions/v1.3.2/) |
 | 1.3.1 | `StructureArc_1.3.1_x64-setup.exe` | 22.5 Mo | `b99e83d13157efd0…` | [notes et limites](versions/v1.3.1/) |
 | 1.3.0 | `StructureArc_1.3.0_x64-setup.exe` | 22.4 Mo | `557400b5409540fc…` | [notes et limites](versions/v1.3.0/) |
 | 1.2.4 | `StructureArc_1.2.4_x64-setup.exe` | 22.4 Mo | `363d436dea3db456…` | [notes et limites](versions/v1.2.4/) |
@@ -20,20 +21,20 @@ Dernière version : **1.3.1** — page *Releases* → `StructureArc_1.3.1_x64-se
 | 1.0.0 | `StructureArc_1.0.0_x64-setup.exe` | 22.2 Mo | `4b8bf6bc63da27df…` | [notes et limites](versions/v1.0.0/) |
 
 ## Pourquoi StructureArc ?
-Beaucoup d'outils font tourner une IA sur votre ordinateur. StructureArc cherche à la laisser **travailler sur vos projets sans lui donner les clés de la machine** :
+Beaucoup d'outils font tourner une IA sur votre ordinateur. StructureArc est conçu pour l'aider à **travailler sur de gros projets, avec les outils réellement disponibles et documentés dans chaque version** — même quand le modèle est petit :
 
-- **Permissions par projet, désactivées par défaut**, confirmation des actions sensibles, journal d'audit et **arrêt d'urgence**.
-- **L'IA propose, vous décidez** : rien n'est modifié ni créé sans votre validation, et seul vous marquez une tâche comme « vérifiée ».
-- **Votre ordinateur reste utilisable** : l'IA est plafonnée à 80 % du processeur et de la mémoire, et refuse de démarrer plutôt que de tout figer.
-- **Le bon petit modèle pour votre machine** : mesure du matériel, choix et bascule entre modèles selon la tâche, écran de compatibilité.
-- **Un logiciel qui prouve ce qu'il dit** : installateur signé, empreintes SHA-256, et pour chaque version la liste de ce qui est prouvé… et de ce qui ne l'est pas.
-- **Aucun prérequis, aucun cloud** : pas de Docker, Python, Git, abonnement ni télémétrie.
+- **Des outils activables par mission et par version** : fichiers, terminal, web/recherche, lecture Office, agents et compétences ; MCP et lecture d'écran ne sont annoncés que selon les limites du build. Les actions machine (souris/clavier et installation de logiciels) ne doivent pas être supposées disponibles : elles sont explicitement signalées comme non implémentées dans les limites publiques V1.3.1.
+- **Une méthode de découpage pour petits modèles** : un gros projet est découpé en étapes qui tiennent dans la fenêtre d'un petit modèle (plan, tâches dépendantes, contrats, contexte compilé, rapports qui remontent), au lieu d'exiger un modèle géant.
+- **Des optimisations mesurées pour petits ET gros modèles** : choix du modèle par tâche d'après des mesures, estimation fine de la mémoire (avec ou sans carte graphique), déport de couches, cache réduit, chargement sans copie en RAM, plafond de charge — avec une preuve publique encore limitée à la machine de référence, pas une garantie pour chaque PC.
+- **Le bon modèle pour votre machine** : mesure du matériel, banc de qualité et d'appels d'outils, tableau publié, bascule entre modèles selon la tâche.
+- **Un cadre qui vous garde le contrôle sans freiner le travail** : permissions par projet que vous ouvrez aussi largement que vous le voulez, journal d'audit, arrêt d'urgence, ressources de l'ordinateur protégées.
+- **Aucun prérequis, aucun cloud** : pas de Docker, Python, Git, abonnement ni télémétrie ; installateur signé, empreintes publiées, limites de chaque version écrites noir sur blanc.
 
 Détails, preuves et ce que nous ne prétendons pas : **[POURQUOI.md](POURQUOI.md)**.
 
 ## État honnête
 - Testé sur **un seul** ordinateur (Windows 11, 16 Go, GTX 1070). Chaque version a son fichier de limites (`LIMITES_*.md`) : lisez-le avant d'installer.
-- Le modèle d'IA n'est pas dans l'installateur ; il est installé ou importé par l'utilisateur, avec vérification d'empreinte.
+- La version publique **1.3.2** propose aussi un installateur hors-ligne avec un modèle embarqué ; son fichier, sa taille et son empreinte sont publiés dans la page de version. Le modèle n'est pas automatiquement activé sans votre choix.
 - Usage gratuit, sans exploitation commerciale par autrui : voir [LICENSE.md](LICENSE.md).
 
 ## Édité par

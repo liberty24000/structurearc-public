@@ -2,12 +2,22 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.2 — 18 octobre 2026
+**Installateur hors-ligne, actions proposées sur la machine, vérification des réponses.**
+- **Installateur hors-ligne** (≈ 1,1 Go) : application, runtime et un petit modèle (Qwen2.5 1,5B) déjà inclus, vérifiés à l'installation ; l'installateur standard reste disponible.
+- **Actions « machine »** (souris, clavier, installation de logiciel) : l'IA ne peut que PROPOSER ; rien ne s'exécute sans votre clic d'approbation sur cette action ; désactivé par défaut, journalisé, coupé par l'arrêt d'urgence.
+- **Contrôle d'ancrage** : un badge sous chaque réponse indique combien de fichiers, adresses, identifiants et nombres cités sont retrouvés dans les sources reçues par le modèle (estimation, pas une garantie).
+- **Outils sûrs** : un modèle n'est choisi pour une tâche à outils que s'il réussit les appels attendus ET ne fait aucun appel parasite au banc ; la matrice de compatibilité l'affiche.
+- **Garde de ressources** : la charge GPU doit rester élevée 10 secondes d'affilée avant d'interrompre une génération (un long prompt sature brièvement la carte) ; la limite de 95 % est inchangée.
+- Corrections : un modèle qui tourne sur la carte graphique n'est plus remplacé à tort par un plus petit ; mise à jour et publication durcies.
+- Limites : voir le fichier LIMITES de cette version (un seul ordinateur testé ; très gros modèles non pris en charge).
+
 ## V1.3.1 — 18 octobre 2026
 **Le meilleur modèle de votre PC, des missions autonomes, le web et des outils externes.**
 - **Choix du modèle mesuré** : sur la machine de référence, Qwen3.5 4B réussit tous les tests de qualité et d'appels d'outils (le 9B donne les mêmes résultats, en plus lent). Le tableau des mesures est publié. Sans carte graphique utilisable, StructureArc recommande un modèle plus petit.
 - **Mémoire mieux estimée** (avec ou sans carte graphique) et part du modèle sur la carte limitée quand elle dépasserait sa limite de charge.
 - **Missions autonomes** : `/mission <objectif>` (ou le bouton « Lancer une mission autonome ») : le chat enchaîne les étapes (30 appels, 20 minutes au plus) sans contourner aucune permission ; une modification de fichier n'est jamais écrite sans votre approbation.
-- **Recherche et lecture web** (niveau « autonome » : choix explicite par projet) ; **connecteurs MCP** (désactivés par défaut, chaque outil « à confirmer ») ; **capture d'écran avec lecture locale du texte** (aucune image conservée ni envoyée).
+- **Recherche et lecture web** (niveau « autonome » : choix explicite par projet) ; **connecteurs MCP** (désactivés par défaut, chaque outil « à confirmer ») ; **capture/OCR local** avec limites de validation précisées dans le fichier LIMITES (aucune image conservée ni envoyée).
 - Mise à jour plus sûre (verrou, refus d'architecture ou de version trop ancienne) ; onglets adaptatifs ; explications repliées.
 - Limites : voir le fichier LIMITES de cette version (un seul ordinateur testé ; l'appel d'un outil MCP par le modèle est irrégulier ; installation hors-ligne et souris/clavier : versions suivantes).
 
