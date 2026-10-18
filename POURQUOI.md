@@ -50,3 +50,13 @@ Voici ce que nous faisons, et pour chaque point **ce qui est prouvé** (scénari
 - Notre différence est **la manière de travailler** (permissions, validation humaine, limites de ressources, honnêteté des preuves), pas un record de performance.
 
 Vous voulez qu'on compare StructureArc à un outil précis ? Ouvrez un ticket : nous le ferons avec des mesures publiques et des sources, pas avec des impressions.
+
+## 8. Des missions autonomes, mais dans le cadre que vous fixez *(V1.3.1)*
+- `/mission <objectif>` : le chat enchaîne lui-même les étapes (lire des fichiers, lancer une commande autorisée, chercher sur le web, **proposer** une modification) jusqu'à un compte rendu, avec un budget **borné** (30 appels d'outils, 20 minutes), l'arrêt d'urgence toujours prioritaire et **aucune permission contournée** : une commande sensible reste soumise à votre confirmation et une modification de fichier n'est écrite que si vous l'approuvez.
+- **Recherche web** et **serveurs MCP** (outils externes) : désactivés par défaut, par projet ; le web « autonome » est un choix explicite ; chaque outil MCP est « à confirmer » tant que vous ne le passez pas en « automatique » ; le chat ne peut ni ajouter ni activer un serveur.
+- **Capture d'écran avec lecture du texte en local** (aucune image conservée ni envoyée) : autorisation séparée, révocable, coupée par l'arrêt d'urgence.
+- *Prouvé* : mission réelle avec un modèle local de 4 milliards de paramètres sur la carte graphique (20 contrôles : appels enchaînés, commande sensible jamais exécutée sans confirmation, vraie recherche sur Internet, modification proposée mais non appliquée, arrêt d'urgence) ; serveur MCP réel déclaré, découvert, exécuté, audité et supprimé depuis l'interface. *Non prouvé* : l'appel d'un outil MCP par le modèle en fenêtre réelle est irrégulier (voir LIMITES).
+
+## 9. Le meilleur modèle de votre PC, mesuré et non supposé *(V1.3.1)*
+- Un banc mesure vitesse, mémoire et réussite (recherche, résumé, architecture, code exécuté, correction, appels d'outils) ; le tableau complet de la machine de référence est publié. Exemple mesuré : un modèle plus gros n'est pas meilleur — Qwen3.5 9B donne les mêmes résultats que le 4B, plus lentement et avec plus de mémoire.
+- L'application tient compte de la mémoire **réellement mesurée** (avec ou sans carte graphique) et limite la part du modèle placée sur la carte quand elle la ferait dépasser sa limite de charge.

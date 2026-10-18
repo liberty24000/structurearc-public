@@ -2,6 +2,15 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.1 — 18 octobre 2026
+**Le meilleur modèle de votre PC, des missions autonomes, le web et des outils externes.**
+- **Choix du modèle mesuré** : sur la machine de référence, Qwen3.5 4B réussit tous les tests de qualité et d'appels d'outils (le 9B donne les mêmes résultats, en plus lent). Le tableau des mesures est publié. Sans carte graphique utilisable, StructureArc recommande un modèle plus petit.
+- **Mémoire mieux estimée** (avec ou sans carte graphique) et part du modèle sur la carte limitée quand elle dépasserait sa limite de charge.
+- **Missions autonomes** : `/mission <objectif>` (ou le bouton « Lancer une mission autonome ») : le chat enchaîne les étapes (30 appels, 20 minutes au plus) sans contourner aucune permission ; une modification de fichier n'est jamais écrite sans votre approbation.
+- **Recherche et lecture web** (niveau « autonome » : choix explicite par projet) ; **connecteurs MCP** (désactivés par défaut, chaque outil « à confirmer ») ; **capture d'écran avec lecture locale du texte** (aucune image conservée ni envoyée).
+- Mise à jour plus sûre (verrou, refus d'architecture ou de version trop ancienne) ; onglets adaptatifs ; explications repliées.
+- Limites : voir le fichier LIMITES de cette version (un seul ordinateur testé ; l'appel d'un outil MCP par le modèle est irrégulier ; installation hors-ligne et souris/clavier : versions suivantes).
+
 ## V1.3.0 — 18 octobre 2026
 **Catalogue de modèles et choix fondé sur des mesures.**
 - **8 modèles de 6 familles** (Qwen, Llama, Gemma, Phi, SmolLM2, Granite) au catalogue, chacun avec sa source, sa version, sa taille, son empreinte SHA-256 et sa licence. Rien n'est téléchargé sans votre accord et chaque fichier est vérifié avant usage.
