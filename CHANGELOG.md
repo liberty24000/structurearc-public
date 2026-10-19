@@ -2,6 +2,11 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.4 — 19 octobre 2026
+**Plusieurs agents locaux en même temps sur un seul modèle.**
+- Les tâches d'un plan peuvent partager un même modèle local chargé sur la carte graphique : sur le PC de test, 3 tâches passent de 28,6 s à 13,2 s. Réglage Paramètres → « Agents simultanés » (1 par défaut) ; le mode parallèle n'est actif que si le modèle est verrouillé et si toutes les tâches sont locales.
+- Une seule mesure en conditions réelles, un seul PC : voir `LIMITES_V1_3_4.md`.
+
 ## V1.3.3 — 19 octobre 2026
 **Calibration automatique de l'IA pour votre machine.**
 - Après le téléchargement d'un modèle, l'application mesure le meilleur réglage de votre carte graphique (nombre de couches) sans dépasser les limites de charge ; résultat par modèle et par carte, modifiable dans l'écran IA. Sur le PC de test, le Qwen3.5 4B passe de 13 à 38 jetons/s.
