@@ -58,7 +58,7 @@ Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaqu
 **Mise à jour en un clic.**
 - StructureArc **détecte** qu'une version plus récente est publiée (une requête HTTPS au dépôt public, au plus une fois par jour, sans donnée personnelle ; désactivable dans *Paramètres*) et affiche une bannière **« Mettre à jour »**.
 - Un clic suffit : téléchargement, **vérification de l'empreinte et de la signature de l'éditeur**, sauvegarde de votre base de données, installation, redémarrage. Vos projets et réglages ne sont pas modifiés. Un installateur non signé ou altéré est **refusé** : rien n'est lancé.
-- L'exécutable **et** l'installateur sont maintenant **signés** ; l'éditeur affiché est « le-bon.contact » ; la **licence** s'affiche à l'installation.
+- L'installateur **et l'exécutable qu'il installe** sont maintenant **signés** (Authenticode, certificat Certum ; vérifié par le scénario de mise à jour réelle ; le binaire compilé seul n'est pas distribué) ; l'éditeur affiché est « le-bon.contact » ; la **licence** s'affiche à l'installation.
 - Pour profiter de la mise à jour en un clic, installez cette version une première fois ; les versions précédentes ne savent pas se mettre à jour toutes seules.
 - Limites : voir le fichier LIMITES de cette version (un seul ordinateur testé ; première mise à jour entre deux versions publiées pas encore observée).
 
