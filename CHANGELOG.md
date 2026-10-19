@@ -15,7 +15,7 @@ Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaqu
 
 ## V1.3.3 — 19 octobre 2026
 **Calibration automatique de l'IA pour votre machine.**
-- Après le téléchargement d'un modèle, l'application mesure le meilleur réglage de votre carte graphique (nombre de couches) sans dépasser les limites de charge ; résultat par modèle et par carte, modifiable dans l'écran IA. Sur le PC de test, le Qwen3.5 4B passe de 13 à 38 jetons/s.
+- Après le téléchargement d'un modèle, l'application mesure le meilleur réglage de votre carte graphique (nombre de couches) sans dépasser les limites de charge ; résultat par modèle et par carte, modifiable dans l'écran IA. Sur le PC de test, le Qwen3.5 4B passe de 13 à 38 jetons/s (mesure du 18 octobre au banc et par calibration réelle, publiée dans les mesures du projet ; le rapport de calibration rattaché à une version livrée concerne le petit modèle 0,5B — celui du 4B sera rattaché à la version suivante).
 - Modèle à experts Qwen3 30B-A3B (2 bits) proposé comme **expérimental** (verrouillage manuel, 10 Go) : ≈ 16 jetons/s mais lecture des longs textes lente.
 - Garde de charge GPU plus fine ; scripts Windows optionnels d'allègement (simulation par défaut).
 - Toutes les mesures viennent d'un seul PC : voir `LIMITES_V1_3_3.md`.
