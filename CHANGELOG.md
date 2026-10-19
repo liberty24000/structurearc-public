@@ -2,6 +2,12 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.5 — 19 octobre 2026
+**Réponses plus rapides quand l'IA recopie ou modifie un texte.**
+- Accélération par motifs répétés (sans second modèle) pour les modèles chargés sur la carte graphique : jusqu'à ×2,4 (Qwen3.5 4B) quand la réponse cite ou réécrit un texte fourni, aucun effet en génération libre. Activée par défaut, désactivable dans Paramètres.
+- Agents simultanés : plafond mémoire corrigé ; qualité vérifiée identique à 4 agents.
+- Une seule machine de mesure : voir `LIMITES_V1_3_5.md`.
+
 ## V1.3.4 — 19 octobre 2026
 **Plusieurs agents locaux en même temps sur un seul modèle.**
 - Les tâches d'un plan peuvent partager un même modèle local chargé sur la carte graphique : sur le PC de test, 3 tâches passent de 28,6 s à 13,2 s. Réglage Paramètres → « Agents simultanés » (1 par défaut) ; le mode parallèle n'est actif que si le modèle est verrouillé et si toutes les tâches sont locales.
