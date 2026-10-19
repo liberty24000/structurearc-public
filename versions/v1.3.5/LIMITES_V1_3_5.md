@@ -26,3 +26,11 @@ Règle suivie : aucune ligne « prouvé » sans commande ni rapport réel dans `
 | **Une machine, un essai** | Toutes les mesures viennent d'un seul PC (Ryzen 7 2700, GTX 1070 8 Go, 16 Go). GPU AMD/Intel/CUDA, ARM, autres Windows : non testés. |
 | **Mise à jour** | Éditeur épinglé par sujet partiel ; manifeste non signé ; pas de retour arrière automatique des binaires. |
 | **Certificat** | Affiche l'ancienne adresse (Sigean ; déménagement à Agen) : réémission Certum à faire par le propriétaire ; SmartScreen peut avertir. |
+
+
+## Errata (ajoutée le 19 octobre 2026, après la publication de la V1.3.5)
+
+La ligne « **Agents simultanés** » de la section « Prouvé » cite des durées tirées de passages ANTÉRIEURS au build final et non toutes incluses dans les preuves de cette livraison :
+- **Qwen2.5 1,5B** : le texte donne « 28,7 s en série contre 13,2 s en parallèle » ; le rapport inclus (`ui-agents-parallel`, exécutable `fb7059f957d7…`, 13/13) donne **28,6 s contre 13,2 s** (×2,17).
+- **Qwen3.5 4B** : le texte donne « 39,7 s contre 22,1 s » ; AUCUN rapport inclus dans cette livraison ne porte cette mesure. Elle a été refaite APRÈS la livraison sur le MÊME exécutable `fb7059f957d7…` (13/13, calibration réelle : 32 couches, `--spec-type ngram-simple` dans la ligne de commande réelle) : **39,7 s en série, 22,0 s en parallèle (×1,80)**, rapport `20261019125704-816`, conservé par le titulaire mais non inclus dans le dossier de preuves de la V1.3.5.
+Les gains de la section « Prouvé » doivent donc être lus : 1,5B ×2,17 (rapport inclus) ; 4B ×1,8 (mesure postérieure, même exécutable, rapport non inclus). Aucun autre chiffre n'est modifié. Le dossier de livraison reste figé ; les preuves correspondantes seront incluses dans la livraison suivante.
