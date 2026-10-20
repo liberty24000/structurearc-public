@@ -4,7 +4,7 @@
 
 Application de bureau **locale** (Windows 11 x64) pour travailler sur de gros projets avec de **petits modèles d'IA qui tournent sur votre PC**. Rien n'est envoyé à un service distant, sauf ce que vous autorisez explicitement (téléchargement d'un modèle, lecture web, serveurs MCP que vous déclarez).
 
-> Version fonctionnelle, pas un produit fini. `LIMITES_V1_3_6.md` dit honnêtement ce qui n'est pas prouvé ou pas fait. Lisez-le avant de compter dessus.
+> Version fonctionnelle, pas un produit fini. `LIMITES_V1_3_8.md` dit honnêtement ce qui n'est pas prouvé ou pas fait. Lisez-le avant de compter dessus.
 
 ## Nouveautés de la V1.3.8
 Version de **correction et de mesure** du Subconscient, issue du premier test sous charge réelle (480 vraies commandes du terminal de l'application).
@@ -21,7 +21,7 @@ Version de **correction et de mesure** du Subconscient, issue du premier test so
 | `StructureArc_1.3.8_x64-offline-setup.exe` | **Installateur hors-ligne signé** (modèle inclus, environ 1,1 Go) |
 | `structurearc.exe` | Exécutable compilé non signé (référence de provenance) |
 | `SHA256SUMS.txt` | Empreintes SHA-256 |
-| `LISEZMOI_V1_3_6.md` / `LIMITES_V1_3_6.md` | Ce guide / ce qui est prouvé ou non |
+| `LISEZMOI_V1_3_8.md` / `LIMITES_V1_3_8.md` | Ce guide / ce qui est prouvé ou non |
 | `docs/` | Architecture, exigences, menaces, compatibilité, mesures du PC |
 | `preuves/` | Rapports JSON, registre de build, journaux de test |
 
