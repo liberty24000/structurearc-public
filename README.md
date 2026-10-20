@@ -5,10 +5,11 @@ Application de bureau **locale** pour Windows 11 (x64) : confier de gros projets
 > **Ce dépôt ne contient que les publications** (installateurs signés en pièces jointes de Release, empreintes, notes et limites de chaque version). Aucun code source n'est publié ici.
 
 ## Télécharger
-Dernière version : **1.3.8** — page *Releases* → `StructureArc_1.3.8_x64-setup.exe`. Vérifiez toujours la signature et l'empreinte : voir [VERIFIER.md](VERIFIER.md).
+Dernière version : **1.3.9** — page *Releases* → `StructureArc_1.3.9_x64-setup.exe`. Vérifiez toujours la signature et l'empreinte : voir [VERIFIER.md](VERIFIER.md).
 
 | Version | Installateur signé | Taille | SHA-256 | Détails |
 |---|---|---|---|---|
+| 1.3.9 | `StructureArc_1.3.9_x64-setup.exe` | 22.6 Mo | `96ddfb90d406ffa3…` | [notes et limites](versions/v1.3.9/) |
 | 1.3.8 | `StructureArc_1.3.8_x64-setup.exe` | 22.6 Mo | `b64a02e44186fecf…` | [notes et limites](versions/v1.3.8/) |
 | 1.3.7 | `StructureArc_1.3.7_x64-setup.exe` | 22.6 Mo | `e1fe9395f27f90e1…` | [notes et limites](versions/v1.3.7/) |
 | 1.3.6 | `StructureArc_1.3.6_x64-setup.exe` | 22.5 Mo | `0b55b477217aa2d4…` | [notes et limites](versions/v1.3.6/) |
@@ -40,7 +41,7 @@ Détails, preuves et ce que nous ne prétendons pas : **[POURQUOI.md](POURQUOI.m
 
 ## État honnête
 - Testé sur **un seul** ordinateur (Windows 11, 16 Go, GTX 1070). Chaque version a son fichier de limites (`LIMITES_*.md`) : lisez-le avant d'installer.
-- La version publique **1.3.8** propose aussi un installateur hors-ligne avec un modèle embarqué ; son fichier, sa taille et son empreinte sont publiés dans la page de version. Le modèle n'est pas automatiquement activé sans votre choix.
+- La version publique **1.3.9** propose aussi un installateur hors-ligne avec un modèle embarqué ; son fichier, sa taille et son empreinte sont publiés dans la page de version. Le modèle n'est pas automatiquement activé sans votre choix.
 - Usage gratuit, sans exploitation commerciale par autrui : voir [LICENSE.md](LICENSE.md).
 
 ## Édité par
