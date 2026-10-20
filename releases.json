@@ -4,6 +4,21 @@
  "note": "Seuls les installateurs signés (Authenticode, statut Valid) sont publiés.",
  "releases": [
   {
+   "version": "1.3.6",
+   "tag": "v1.3.6",
+   "installer": "StructureArc_1.3.6_x64-setup.exe",
+   "size": 23616000,
+   "sha256": "0b55b477217aa2d45cda54d3f1d04dcb8571e994fc36729deb1bcbe569ff6895",
+   "published_at": "2026-10-19T21:34:58.800Z",
+   "signed": true,
+   "notes": "versions/v1.3.6/LIMITES_V1_3_6.md",
+   "offline": {
+    "file": "StructureArc_1.3.6_x64-offline-setup.exe",
+    "size": 1118358552,
+    "sha256": "ef364afc0d86357764c64f17fa4285f1dd1c1f8160c51e83212b3b59504bdee3"
+   }
+  },
+  {
    "version": "1.3.5",
    "tag": "v1.3.5",
    "installer": "StructureArc_1.3.5_x64-setup.exe",

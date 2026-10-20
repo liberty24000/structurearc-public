@@ -1,0 +1,2 @@
+0b55b477217aa2d45cda54d3f1d04dcb8571e994fc36729deb1bcbe569ff6895 *StructureArc_1.3.6_x64-setup.exe
+ef364afc0d86357764c64f17fa4285f1dd1c1f8160c51e83212b3b59504bdee3 *StructureArc_1.3.6_x64-offline-setup.exe

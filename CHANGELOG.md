@@ -2,6 +2,14 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.6 — 20 octobre 2026
+**Un modèle adapté à chaque type de tâche, et un démarrage plus léger.**
+- Table de choix du modèle par type de tâche (rédaction, raisonnement, code, recherche web, contexte long, agents) ; NeoHorse 1 9B devient le modèle recommandé sur un PC qui le supporte, sinon le Qwen3.5 4B. Rien n'est téléchargé sans votre accord ; le verrou manuel passe toujours en premier. Pour l'instant ce choix sert aux agents, pas encore au chat.
+- Conversations plus rapides : le message système ne change plus d'une question à l'autre (mesure synthétique : préremplissage 8,3 s → 2,3 s avec 15 outils).
+- Démarrage plus léger : fin de la relecture des modèles du catalogue à chaque affichage.
+- Quatre nouveaux modèles au catalogue (Gemma 4 12B, QwenPaw Flash 9B, Qwopus3.5 9B Coder, NeoHorse 1 9B) et un classement mesuré de douze modèles dans la documentation.
+- Une seule machine de mesure : voir `LIMITES_V1_3_6.md`.
+
 ## V1.3.5 — 19 octobre 2026
 **Réponses plus rapides quand l'IA recopie ou modifie un texte.**
 - Accélération par motifs répétés (sans second modèle) pour les modèles chargés sur la carte graphique : jusqu'à ×2,4 (Qwen3.5 4B) quand la réponse cite ou réécrit un texte fourni, aucun effet en génération libre. Activée par défaut, désactivable dans Paramètres.
