@@ -4,6 +4,21 @@
  "note": "Seuls les installateurs signés (Authenticode, statut Valid) sont publiés.",
  "releases": [
   {
+   "version": "1.3.12",
+   "tag": "v1.3.12",
+   "installer": "StructureArc_1.3.12_x64-setup.exe",
+   "size": 23796744,
+   "sha256": "48a0e0e4f246e93cb48186c695d727f748b3d1ace78ed64b550660ac0e89e33a",
+   "published_at": "2026-10-21T15:53:17.992Z",
+   "signed": true,
+   "notes": "versions/v1.3.12/LIMITES_V1_3_12.md",
+   "offline": {
+    "file": "StructureArc_1.3.12_x64-offline-setup.exe",
+    "size": 1118544600,
+    "sha256": "2c65a7e2a81518087d68d4fe3f1c279bf9e796baadddb703fa5451d538d261c7"
+   }
+  },
+  {
    "version": "1.3.11",
    "tag": "v1.3.11",
    "installer": "StructureArc_1.3.11_x64-setup.exe",
@@ -27,11 +42,7 @@
    "published_at": "2026-10-20T22:50:51.898Z",
    "signed": true,
    "notes": "versions/v1.3.10/LIMITES_V1_3_10.md",
-   "offline": {
-    "file": "StructureArc_1.3.10_x64-offline-setup.exe",
-    "size": 1118532824,
-    "sha256": "36691b57080ecda84eac3516e7bc58530ec61a5ca37240f38e9269c3cdc3b403"
-   }
+   "offline": null
   },
   {
    "version": "1.3.9",
@@ -42,11 +53,7 @@
    "published_at": "2026-10-20T16:16:38.752Z",
    "signed": true,
    "notes": "versions/v1.3.9/LIMITES_V1_3_9.md",
-   "offline": {
-    "file": "StructureArc_1.3.9_x64-offline-setup.exe",
-    "size": 1118496400,
-    "sha256": "36fb850d3c2406b5cdbecf248a4d1a9c863d587f18e42645a8143f55213b9af7"
-   }
+   "offline": null
   },
   {
    "version": "1.3.8",
@@ -57,11 +64,7 @@
    "published_at": "2026-10-20T13:12:50.025Z",
    "signed": true,
    "notes": "versions/v1.3.8/LIMITES_V1_3_8.md",
-   "offline": {
-    "file": "StructureArc_1.3.8_x64-offline-setup.exe",
-    "size": 1118458448,
-    "sha256": "40f636765ec0141b3bab3fe46fbbf4000e81006e16a469b5e22b97996f9d4a9c"
-   }
+   "offline": null
   },
   {
    "version": "1.3.7",
@@ -72,11 +75,7 @@
    "published_at": "2026-10-20T11:46:47.567Z",
    "signed": true,
    "notes": "versions/v1.3.7/LIMITES_V1_3_7.md",
-   "offline": {
-    "file": "StructureArc_1.3.7_x64-offline-setup.exe",
-    "size": 1118472808,
-    "sha256": "a57b0c8e3a084c83ba7bd30a450f4fc142aa14c4019f455abd0ce36f9f50e19e"
-   }
+   "offline": null
   },
   {
    "version": "1.3.6",
@@ -87,11 +86,7 @@
    "published_at": "2026-10-19T21:34:58.800Z",
    "signed": true,
    "notes": "versions/v1.3.6/LIMITES_V1_3_6.md",
-   "offline": {
-    "file": "StructureArc_1.3.6_x64-offline-setup.exe",
-    "size": 1118358552,
-    "sha256": "ef364afc0d86357764c64f17fa4285f1dd1c1f8160c51e83212b3b59504bdee3"
-   }
+   "offline": null
   },
   {
    "version": "1.3.5",
@@ -102,11 +97,7 @@
    "published_at": "2026-10-19T10:34:19.834Z",
    "signed": true,
    "notes": "versions/v1.3.5/LIMITES_V1_3_5.md",
-   "offline": {
-    "file": "StructureArc_1.3.5_x64-offline-setup.exe",
-    "size": 1118357848,
-    "sha256": "ee74e5b4e1e73f9d546b28a98b1adccae875a6c0010c0b5d73b037f2bebbf2c4"
-   }
+   "offline": null
   },
   {
    "version": "1.3.4",
@@ -117,11 +108,7 @@
    "published_at": "2026-10-19T00:17:08.705Z",
    "signed": true,
    "notes": "versions/v1.3.4/LIMITES_V1_3_4.md",
-   "offline": {
-    "file": "StructureArc_1.3.4_x64-offline-setup.exe",
-    "size": 1118366416,
-    "sha256": "99dba3889bc24be2a1515f280b6063158c3e36219a35faa66b7b0d954b0fd370"
-   }
+   "offline": null
   },
   {
    "version": "1.3.3",
@@ -132,11 +119,7 @@
    "published_at": "2026-10-18T22:47:17.966Z",
    "signed": true,
    "notes": "versions/v1.3.3/LIMITES_V1_3_3.md",
-   "offline": {
-    "file": "StructureArc_1.3.3_x64-offline-setup.exe",
-    "size": 1118354480,
-    "sha256": "f373366d645c65679bf868dcb6c88c608cc1c854ce8e157ccd81bfd5eacf5e46"
-   }
+   "offline": null
   },
   {
    "version": "1.3.2",
@@ -147,11 +130,7 @@
    "published_at": "2026-10-18T15:32:46.748Z",
    "signed": true,
    "notes": "versions/v1.3.2/LIMITES_V1_3_2.md",
-   "offline": {
-    "file": "StructureArc_1.3.2_x64-offline-setup.exe",
-    "size": 1118337792,
-    "sha256": "c75a00283aaf94f5ab84c7dcbb00f8239813ab7bbf738acc8d0a894f0a3c86eb"
-   }
+   "offline": null
   },
   {
    "version": "1.3.1",
