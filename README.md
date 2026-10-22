@@ -1,14 +1,17 @@
 # StructureArc
 
+![StructureArc — atelier d'IA locale pour Windows 11](assets/banner.png)
+
 Application de bureau **locale** pour Windows 11 (x64) : confier de gros projets à une IA locale (missions, outils disponibles dans le build, méthode de découpage pour petits modèles), avec un cadre de permissions que vous réglez. Aucun compte, aucune télémétrie.
 
 > **Ce dépôt ne contient que les publications** (installateurs signés en pièces jointes de Release, empreintes, notes et limites de chaque version). Aucun code source n'est publié ici.
 
 ## Télécharger
-Dernière version : **1.3.12** — page *Releases* → `StructureArc_1.3.12_x64-setup.exe`. Vérifiez toujours la signature et l'empreinte : voir [VERIFIER.md](VERIFIER.md).
+Dernière version : **1.3.13** — page *Releases* → `StructureArc_1.3.13_x64-setup.exe`. Vérifiez toujours la signature et l'empreinte : voir [VERIFIER.md](VERIFIER.md).
 
 | Version | Installateur signé | Taille | SHA-256 | Détails |
 |---|---|---|---|---|
+| 1.3.13 | `StructureArc_1.3.13_x64-setup.exe` | 22.7 Mo | `49dfff31265701eb…` | [notes et limites](versions/v1.3.13/) |
 | 1.3.12 | `StructureArc_1.3.12_x64-setup.exe` | 22.7 Mo | `48a0e0e4f246e93c…` | [notes et limites](versions/v1.3.12/) |
 | 1.3.11 | `StructureArc_1.3.11_x64-setup.exe` | 22.7 Mo | `ea80b00f2e4989e9…` | [notes et limites](versions/v1.3.11/) |
 | 1.3.10 | `StructureArc_1.3.10_x64-setup.exe` | 22.7 Mo | `b9904cf6f80c9ace…` | [notes et limites](versions/v1.3.10/) |
@@ -30,6 +33,15 @@ Dernière version : **1.3.12** — page *Releases* → `StructureArc_1.3.12_x64-
 | 1.1.0 | `StructureArc_1.1.0_x64-setup.exe` | 22.2 Mo | `658e6271cfe3eb5e…` | [notes et limites](versions/v1.1.0/) |
 | 1.0.0 | `StructureArc_1.0.0_x64-setup.exe` | 22.2 Mo | `4b8bf6bc63da27df…` | [notes et limites](versions/v1.0.0/) |
 
+## Aperçu
+Captures de l'interface sur un projet d'exemple, prises sur une version de développement ultérieure à la 1.3.13, dont l'interface est identique ; les chemins de l'ordinateur de test sont remplacés par un chemin neutre.
+
+| | |
+|---|---|
+| ![Accueil : choisir un dossier de projet](assets/screenshots/accueil.png)<br>Accueil : choisir un dossier de projet | ![Chat du projet, avec l'état de l'index et des autorisations](assets/screenshots/chat-clair.png)<br>Chat du projet, avec l'état de l'index et des autorisations |
+| ![Thème sombre](assets/screenshots/chat-sombre.png)<br>Thème sombre | ![Architecture déduite du projet (modules et dépendances)](assets/screenshots/architecture.png)<br>Architecture déduite du projet (modules et dépendances) |
+| ![Autorisations par projet : tout est refusé par défaut](assets/screenshots/autorisations.png)<br>Autorisations par projet : tout est refusé par défaut | ![IA locale : mesure de la machine et choix du modèle](assets/screenshots/ia-locale.png)<br>IA locale : mesure de la machine et choix du modèle |
+
 ## Pourquoi StructureArc ?
 Beaucoup d'outils font tourner une IA sur votre ordinateur. StructureArc est conçu pour l'aider à **travailler sur de gros projets, avec les outils réellement disponibles et documentés dans chaque version** — même quand le modèle est petit :
 
@@ -43,8 +55,8 @@ Beaucoup d'outils font tourner une IA sur votre ordinateur. StructureArc est con
 Détails, preuves et ce que nous ne prétendons pas : **[POURQUOI.md](POURQUOI.md)**.
 
 ## État honnête
-- Testé sur **un seul** ordinateur (Windows 11, 16 Go, GTX 1070). Chaque version a son fichier de limites (`LIMITES_*.md`) : lisez-le avant d'installer.
-- La version publique **1.3.12** propose aussi un installateur hors-ligne avec un modèle embarqué ; son fichier, sa taille et son empreinte sont publiés dans la page de version. Le modèle n'est pas automatiquement activé sans votre choix.
+- Testé sur **un seul** ordinateur (Windows 11, 32 Go, GTX 1070). Chaque version a son fichier de limites (`LIMITES_*.md`) : lisez-le avant d'installer.
+- La version publique **1.3.13** propose aussi un installateur hors-ligne avec un modèle embarqué ; son fichier, sa taille et son empreinte sont publiés dans la page de version. Le modèle n'est pas automatiquement activé sans votre choix.
 - Usage gratuit, sans exploitation commerciale par autrui : voir [LICENSE.md](LICENSE.md).
 
 ## Édité par

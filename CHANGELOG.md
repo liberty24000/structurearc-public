@@ -2,6 +2,50 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.13 — 21 octobre 2026
+**Mise à jour plus sûre et choix automatique du modèle.**
+- Mise à jour : l'éditeur de l'installateur est vérifié par le nom exact du certificat ou son empreinte, et non plus par une simple correspondance partielle.
+- Choix automatique du modèle : la bascule entre petits modèles (0,5B → 4B → 0,5B) et le verrouillage manuel ont été observés en fenêtre réelle, sur une seule machine de mesure.
+- Installateur hors-ligne avec modèle embarqué ; signatures et empreintes vérifiables (voir `VERIFIER.md`).
+- Défaut connu, non corrigé dans cette version : abandonner une copie d'auto-amélioration ne retire pas toujours le projet de la liste, ce qui peut ralentir l'ouverture des projets.
+- Auto-développement toujours expérimental : aucun modèle local essayé n'a terminé une tâche seul, voir `LIMITES_V1_3_13.md`.
+
+## V1.3.12 — 21 octobre 2026
+**Un chat qui se lit comme les autres, et une signature plus simple.**
+- Chat : la zone de saisie reste fixe en bas ; seul le fil des messages défile et il suit les nouveaux messages. Si vous remontez lire plus haut, il ne vous ramène pas en bas ; envoyer un message vous y ramène.
+- Auto-développement (expérimental) : durci d'après 14 observations réelles. **Résultat honnête : aucun modèle local essayé n'a terminé une tâche seul**, voir `LIMITES_V1_3_12.md`.
+- Les installateurs sont désormais signés sans l'application SimplySign Desktop ; la signature reste vérifiable (Authenticode).
+- Une seule machine de mesure : voir `LIMITES_V1_3_12.md`.
+
+## V1.3.11 — 21 octobre 2026
+**Rouvrir un projet avec ses conversations.**
+- Le dossier `.structurearc/` d'un projet garde de quoi le reprendre : définition, conversations (secrets masqués) et un résumé de reprise `RESUME.md`. À l'ouverture, les conversations absentes sont restaurées ; **les autorisations ne le sont jamais**.
+- Fenêtre de contexte mieux gérée avec les petits modèles (reprise automatique après un dépassement, lecture d'un gros fichier par morceaux).
+- Une seule machine de mesure : voir `LIMITES_V1_3_11.md`.
+
+## V1.3.10 — 20 octobre 2026
+**Plus de puissance de la carte graphique, avec un filet de sécurité.**
+- Charge de la carte graphique réglable de 50 à 100 % (100 % par défaut) avec un arrêt préventif si elle chauffe trop (≈ 89 °C). Le processeur et la mémoire restent plafonnés à 80 %. Le filet de température n'a été éprouvé qu'en simulation.
+- Tous les fichiers Markdown d'un projet (y compris ceux des dossiers d'agents `.claude`, `.codex`, `.cursor`…) sont inventoriés pour l'IA, en lecture seule.
+- Une seule machine de mesure : voir `LIMITES_V1_3_10.md`.
+
+## V1.3.9 — 20 octobre 2026
+**L'IA peut demander une autorisation dans le chat.**
+- Demandes d'autorisation oui/non directement dans la conversation, boutons « Tout autoriser » et « Tout révoquer », outil d'indexation du projet.
+- Auto-amélioration encadrée : travail dans une copie isolée du projet, chemins protégés, briefing de reprise.
+- Une seule machine de mesure : voir `LIMITES_V1_3_9.md`.
+
+## V1.3.8 — 20 octobre 2026
+**Le « subconscient » mesuré sous charge.**
+- Surcoût de latence réduit de 9 ms à environ 1 ms par commande après un test sous charge réelle. Aucun gain d'intelligence n'est démontré à ce jour.
+- Une seule machine de mesure : voir `LIMITES_V1_3_8.md`.
+
+## V1.3.7 — 20 octobre 2026
+**Choix automatique du modèle dans le chat (implémenté, non encore démontré en fenêtre réelle à cette version).**
+- Le chat peut basculer entre petits modèles selon la tâche, avec une ligne qui explique la décision et un verrou manuel qui passe toujours en premier. (La démonstration en fenêtre réelle est venue plus tard.)
+- Une première couche cognitive légère (mémoire des actions, réflexes prudents) qui ne charge aucun modèle.
+- Une seule machine de mesure : voir `LIMITES_V1_3_7.md`.
+
 ## V1.3.6 — 20 octobre 2026
 **Un modèle adapté à chaque type de tâche, et un démarrage plus léger.**
 - Table de choix du modèle par type de tâche (rédaction, raisonnement, code, recherche web, contexte long, agents) ; NeoHorse 1 9B devient le modèle recommandé sur un PC qui le supporte, sinon le Qwen3.5 4B. Rien n'est téléchargé sans votre accord ; le verrou manuel passe toujours en premier. Pour l'instant ce choix sert aux agents, pas encore au chat.
