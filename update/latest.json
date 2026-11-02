@@ -1,7 +1,7 @@
 {
- "version": "1.3.13",
- "url": "https://github.com/liberty24000/structurearc-public/releases/download/v1.3.13/StructureArc_1.3.13_x64-setup.exe",
- "size": 23798448,
- "sha256": "49dfff31265701eb5ddf3396345c6b5aefcf508e5bac327525fc1dd20c454fdc",
- "notes": "Voir versions/v1.3.13/ et les limites de cette version. Installateur signé."
+ "version": "1.3.16",
+ "url": "https://github.com/liberty24000/structurearc-public/releases/download/v1.3.16/StructureArc_1.3.16_x64-setup.exe",
+ "size": 23914776,
+ "sha256": "36de85b95d717e288f42f5de2492f0a354c5dce6edb9c18272126ab7d461930e",
+ "notes": "Voir versions/v1.3.16/ et les limites de cette version. Installateur signé."
 }

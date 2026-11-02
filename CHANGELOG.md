@@ -2,6 +2,16 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.16 — 2 novembre 2026
+**Chat réorientable, plan de travail et processus en parallèle.**
+- Envoyer une nouvelle consigne pendant une réponse ; choix manuel du modèle conservé.
+- Plan persistant avec dépendances, rapports, interruption, reprise et équipe en trois étapes.
+- Processus en arrière-plan avec arrêt ciblé et résultats conservés ; deux processus indépendants vérifiés simultanément.
+- Améliorations de l'indexation, de l'OCR, de la mémoire des erreurs, du web public et des outils terminal.
+- Chat épuré : bouton vocal unique pour démarrer/arrêter la discussion et actions occasionnelles dans un menu discret. Écoute pendant le travail ; dialogue vocal simultané et moteurs Kyutai non inclus.
+- Installateur en ligne : modèle téléchargé séparément avec contrôle de taille et SHA-256.
+- Autonomie générale et auto-amélioration toujours expérimentales ; voir `LIMITES_V1_3_16.md`.
+
 ## V1.3.13 — 21 octobre 2026
 **Mise à jour plus sûre et choix automatique du modèle.**
 - Mise à jour : l'éditeur de l'installateur est vérifié par le nom exact du certificat ou son empreinte, et non plus par une simple correspondance partielle.
@@ -84,7 +94,7 @@ Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaqu
 
 ## V1.3.1 — 18 octobre 2026
 **Le meilleur modèle de votre PC, des missions autonomes, le web et des outils externes.**
-- **Choix du modèle mesuré** : sur la machine de référence, Qwen3.5 4B réussit tous les tests de qualité et d'appels d'outils (le 9B donne les mêmes résultats, en plus lent). Le tableau des mesures est publié. Sans carte graphique utilisable, StructureArc recommande un modèle plus petit.
+- **Choix du modèle mesuré** : sur la machine de référence, au banc COURT de l'époque (quelques tâches, une seule machine), Qwen3.5 4B réussit tous les tests de qualité et d'appels d'outils de ce banc (le 9B donne les mêmes résultats, en plus lent). Ce résultat n'établit ni une fiabilité générale ni l'autonomie sur de gros projets ; voir `LIMITES_V1_3_1.md` (MCP inconclusif) et les limites des versions suivantes. Le tableau des mesures est publié. Sans carte graphique utilisable, StructureArc recommande un modèle plus petit.
 - **Mémoire mieux estimée** (avec ou sans carte graphique) et part du modèle sur la carte limitée quand elle dépasserait sa limite de charge.
 - **Missions autonomes** : `/mission <objectif>` (ou le bouton « Lancer une mission autonome ») : le chat enchaîne les étapes (30 appels, 20 minutes au plus) sans contourner aucune permission ; une modification de fichier n'est jamais écrite sans votre approbation.
 - **Recherche et lecture web** (niveau « autonome » : choix explicite par projet) ; **connecteurs MCP** (désactivés par défaut, chaque outil « à confirmer ») ; **capture/OCR local** avec limites de validation précisées dans le fichier LIMITES (aucune image conservée ni envoyée).
