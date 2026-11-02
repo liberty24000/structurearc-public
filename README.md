@@ -13,7 +13,6 @@ Dernière version : **1.3.17** — page *Releases* → `StructureArc_1.3.17_x64-
 |---|---|---|---|---|
 | 1.3.17 | `StructureArc_1.3.17_x64-setup.exe` | 22.9 Mo | `33e769a17e47560f…` | [notes et limites](versions/v1.3.17/) |
 | 1.3.16 | `StructureArc_1.3.16_x64-setup.exe` | 22.8 Mo | `36de85b95d717e28…` | [notes et limites](versions/v1.3.16/) |
-| 1.3.15 | `StructureArc_1.3.15_x64-setup.exe` | 22.7 Mo | `c8d9505ebbbfba6b…` | [notes et limites](versions/v1.3.15/) |
 | 1.3.13 | `StructureArc_1.3.13_x64-setup.exe` | 22.7 Mo | `49dfff31265701eb…` | [notes et limites](versions/v1.3.13/) |
 | 1.3.12 | `StructureArc_1.3.12_x64-setup.exe` | 22.7 Mo | `48a0e0e4f246e93c…` | [notes et limites](versions/v1.3.12/) |
 | 1.3.11 | `StructureArc_1.3.11_x64-setup.exe` | 22.7 Mo | `ea80b00f2e4989e9…` | [notes et limites](versions/v1.3.11/) |
