@@ -2,6 +2,15 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.17 — 3 novembre 2026
+**Application mobile installable et conversation vocale reliée au chat.**
+- Ajout à l’écran d’accueil sur Android/iPhone, avec guide d’installation et écran de reconnexion.
+- HTTPS local avec certificat stable ; son approbation initiale sur le téléphone reste nécessaire.
+- Un seul bouton vocal : écoute pendant la réponse, interruption de la lecture et poursuite dans le même chat. Les moteurs français tournent sur le PC ; le téléphone fournit le micro et le son.
+- Connexion prolongée de trente jours sur choix explicite et déconnexion de l’appareil.
+- Tests HTTPS avec les vrais moteurs Windows réussis. Installation physique, microphone et écho sur Android/iPhone restent à valider ; voir `LIMITES_V1_3_17.md`.
+- Le PC doit rester ouvert et un modèle prêt. L’API Anthropic directe et l’autonomie universelle ne sont pas livrées.
+
 ## V1.3.16 — 2 novembre 2026
 **Chat réorientable, plan de travail et processus en parallèle.**
 - Envoyer une nouvelle consigne pendant une réponse ; choix manuel du modèle conservé.
