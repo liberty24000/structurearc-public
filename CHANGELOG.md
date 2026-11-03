@@ -2,6 +2,19 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.19 — 3 novembre 2026
+
+**Analyse mieux encadrée et meilleur suivi des longues conversations.**
+
+- Analyse en lecture seule : les rappels restent dans le périmètre autorisé, même si l’objectif cité demande une réalisation. Une inspection réelle est nécessaire, avec un suivi renouvelé après une réorientation pendant le travail.
+- Mémoire des échanges : les résumés successifs reprennent le précédent, dans une limite de **6 000 caractères Unicode**.
+- Historique : affichage des **1 000 derniers messages dans l’ordre chronologique** ; les messages originaux plus anciens restent conservés en base.
+- Validation native : **911 réussis, 0 échec, 18 ignorés sur 929 tests**. Ces tests ne constituent pas un nouveau succès d’autonomie réelle.
+
+**Limites : essais réels 6 à 11 en échec ; autonomie complète non validée.** L’essai **12 est en cours à la rédaction ; aucun résultat terminal réel n’est retenu**. Aucun nouveau test physique téléphone/écho ; API Anthropic directe et Moshi absents. Les anciens tests voix/interface ne sont pas présentés comme rejoués. Voir `LIMITES_V1_3_19.md`.
+
+Paquet construit et contrôlé : installateur et application installée signés, autotests brut et installé **18/18**, production TypeScript et Vite réussis. Mise à niveau silencieuse au code **0**, avec empreintes des **2 projets, 35 conversations et 345 messages** contrôlés exactement conservées ; intégrité SQLite correcte. Aucun aller-retour de désinstallation isolée. Empreintes SHA-256 dans `LIMITES_V1_3_19.md`. Périmètre de publication : documents et installateurs contrôlés uniquement.
+
 ## V1.3.18 — 3 novembre 2026
 
 **Voix mieux coordonnée, interface simplifiée et erreurs de tâches mieux rapportées. Paquet construit, signé et contrôlé.**
