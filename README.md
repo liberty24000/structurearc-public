@@ -2,15 +2,16 @@
 
 ![StructureArc — atelier d'IA locale pour Windows 11](assets/banner.png)
 
-Application de bureau **locale** pour Windows 11 (x64) : confier de gros projets à une IA locale (missions, outils disponibles dans le build, méthode de découpage pour petits modèles), avec un cadre de permissions que vous réglez. Aucun compte, aucune télémétrie.
+Application de bureau pour Windows 11 (x64) : travailler sur vos projets avec des modèles locaux ou, dans les versions compatibles, l’API Claude d’Anthropic choisie explicitement. Le mode local ne nécessite aucun compte ; l’API distante nécessite votre clé et envoie le contexte autorisé au fournisseur. Les capacités et limites sont précisées par version.
 
 > **Ce dépôt ne contient que les publications** (installateurs signés en pièces jointes de Release, empreintes, notes et limites de chaque version). Aucun code source n'est publié ici.
 
 ## Télécharger
-Dernière version : **1.3.19** — page *Releases* → `StructureArc_1.3.19_x64-setup.exe`. Vérifiez toujours la signature et l'empreinte : voir [VERIFIER.md](VERIFIER.md).
+Dernière version : **1.3.20** — page *Releases* → `StructureArc_1.3.20_x64-setup.exe`. Vérifiez toujours la signature et l'empreinte : voir [VERIFIER.md](VERIFIER.md).
 
 | Version | Installateur signé | Taille | SHA-256 | Détails |
 |---|---|---|---|---|
+| 1.3.20 | `StructureArc_1.3.20_x64-setup.exe` | 23.1 Mo | `f44f6b43912c7fec…` | [notes et limites](versions/v1.3.20/) |
 | 1.3.19 | `StructureArc_1.3.19_x64-setup.exe` | 23.0 Mo | `ebe1ff017ce553f6…` | [notes et limites](versions/v1.3.19/) |
 | 1.3.18 | `StructureArc_1.3.18_x64-setup.exe` | 22.9 Mo | `1d4f876199befa4a…` | [notes et limites](versions/v1.3.18/) |
 | 1.3.17 | `StructureArc_1.3.17_x64-setup.exe` | 22.9 Mo | `33e769a17e47560f…` | [notes et limites](versions/v1.3.17/) |
@@ -38,7 +39,7 @@ Dernière version : **1.3.19** — page *Releases* → `StructureArc_1.3.19_x64-
 | 1.0.0 | `StructureArc_1.0.0_x64-setup.exe` | 22.2 Mo | `4b8bf6bc63da27df…` | [notes et limites](versions/v1.0.0/) |
 
 ## Aperçu
-Captures de l'interface sur un projet d'exemple, prises sur une version de développement ultérieure à la 1.3.13, dont l'interface est identique ; les chemins de l'ordinateur de test sont remplacés par un chemin neutre.
+Captures historiques sur un projet d’exemple ; elles illustrent les principales vues et peuvent différer de la version actuelle. Les chemins de l’ordinateur de test sont remplacés par un chemin neutre.
 
 | | |
 |---|---|
@@ -54,13 +55,13 @@ Beaucoup d'outils font tourner une IA sur votre ordinateur. StructureArc est con
 - **Des optimisations mesurées pour petits ET gros modèles** : choix du modèle par tâche d'après des mesures, estimation fine de la mémoire (avec ou sans carte graphique), déport de couches, cache réduit, chargement sans copie en RAM, plafond de charge — avec une preuve publique encore limitée à la machine de référence, pas une garantie pour chaque PC.
 - **Le bon modèle pour votre machine** : mesure du matériel, banc de qualité et d'appels d'outils, tableau publié, bascule entre modèles selon la tâche.
 - **Un cadre qui vous garde le contrôle sans freiner le travail** : permissions par projet que vous ouvrez aussi largement que vous le voulez, journal d'audit, arrêt d'urgence, ressources de l'ordinateur protégées.
-- **Aucun prérequis, aucun cloud** : pas de Docker, Python, Git, abonnement ni télémétrie ; installateur signé, empreintes publiées, limites de chaque version écrites noir sur blanc.
+- **Mode local sans cloud obligatoire** : pas de Docker, Python ou Git requis pour le chat local avec un modèle installé. Le fournisseur distant est optionnel et dépend de ses propres conditions et tarifs. Installateur signé, empreintes publiées et limites précisées par version.
 
 Détails, preuves et ce que nous ne prétendons pas : **[POURQUOI.md](POURQUOI.md)**.
 
 ## État honnête
 - Testé sur **un seul** ordinateur (Windows 11, 32 Go, GTX 1070). Chaque version a son fichier de limites (`LIMITES_*.md`) : lisez-le avant d'installer.
-- Pour la version publique **1.3.19**, le modèle n'est pas inclus dans l'installateur standard ; il est installé ou importé par l'utilisateur, avec vérification d'empreinte. Un éventuel installateur hors-ligne en développement n'est pas une publication.
+- Pour la version publique **1.3.20**, le modèle n'est pas inclus dans l'installateur standard ; il est installé ou importé par l'utilisateur, avec vérification d'empreinte. Un éventuel installateur hors-ligne en développement n'est pas une publication.
 - Usage gratuit, sans exploitation commerciale par autrui : voir [LICENSE.md](LICENSE.md).
 
 ## Édité par

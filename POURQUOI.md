@@ -37,8 +37,8 @@ Voici ce que nous faisons, et pour chaque point **ce qui est prouvé** (scénari
 - Pour **chaque version**, un fichier *LIMITES* liste **ce qui a été prouvé et ce qui ne l'a pas été** (y compris les échecs de test conservés). Nous ne publions pas de promesse sans preuve.
 - *Prouvé sur le build public concerné* : installation et désinstallation automatisées (le nombre exact de contrôles est indiqué dans le fichier *LIMITES* de la version), données conservées à la désinstallation.
 
-## 6. Pas de prérequis, pas de cloud
-- Pas de Docker, de Python, de Git ni d'abonnement ; **aucun compte, aucune télémétrie** ; vos données restent sur votre ordinateur ; les secrets (clés, mots de passe) sont **masqués** avant d'être montrés à l'IA ou écrits dans un journal.
+## 6. Mode local, fournisseur distant optionnel
+- Le chat local avec un modèle installé ne nécessite ni Docker, ni Python, ni Git, ni compte fournisseur. Les versions compatibles proposent aussi Claude API : ce choix est explicite par projet, nécessite votre clé et envoie le contexte autorisé à Anthropic. Les conditions et tarifs du fournisseur s’appliquent. La clé reste dans le coffre du PC hôte et n’est pas transmise au téléphone. Les fonctions réseau et les autres outils gardent les limites documentées par version.
 - Interface en **19 langues**, installateur en 18 langues.
 
 ## 7. Des mises à jour en un clic, mais sûres

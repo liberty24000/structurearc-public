@@ -2,6 +2,18 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.20 — 3 novembre 2026
+
+**Fournisseur Claude facultatif dans le chat, installation mobile corrigée et disponibilité vocale mieux suivie.**
+
+- Choix entre modèle local et API Claude dans le même sélecteur ; clé conservée dans le coffre du PC, cloud sur choix explicite. Les outils gardent leurs permissions. Certaines anciennes conversations contenant des observations de projets liés nécessitent une nouvelle conversation pour le cloud.
+- PWA : type du manifeste d’installation corrigé. Après une indisponibilité initiale, nouvelle vérification vocale toutes les 15 secondes lorsque la page est visible, au retour du réseau ou au premier plan. Aucun microphone désactivé n’est activé automatiquement.
+- Un seul bouton vocal, interruption de la lecture en parlant et poursuite dans le même chat. Le PC et le réseau restent nécessaires.
+- Contrôles : **946 tests natifs réussis, 0 échec, 18 ignorés** ; **141 tests mobile/voix** ; production TypeScript/Vite réussie. Scénario HTTPS avec moteurs français Windows réels réussi, sans matériel audio ni téléphone.
+- Installateur et application installée signés ; autotests brut et installé **18/18**, mise à niveau silencieuse réussie avec empreintes des données contrôlées exactement conservées. Aucun aller-retour de désinstallation isolée.
+
+**Limites : aucun appel Anthropic réel avec une clé n’a été testé ; aucun test physique téléphone ou acoustique.** Essais réels 12 et 13 en échec, autonomie complète non validée ; Moshi non intégré. Empreintes et portée des preuves dans `LIMITES_V1_3_20.md`. Périmètre de publication : documents et installateurs contrôlés uniquement.
+
 ## V1.3.19 — 3 novembre 2026
 
 **Analyse mieux encadrée et meilleur suivi des longues conversations.**
