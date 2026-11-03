@@ -2,6 +2,18 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.18 — 3 novembre 2026
+
+**Voix mieux coordonnée, interface simplifiée et erreurs de tâches mieux rapportées. Paquet construit, signé et contrôlé.**
+
+- Voix : une ancienne interruption ne doit plus couper une nouvelle phrase mise en lecture.
+- Interface : plus de carte d’installation quand runtime et modèle sont déjà installés, ni mention fixe « aucun modèle » ou rubrique « À venir » vide.
+- Appels d’outils incorrects : reprise limitée à deux tentatives ; seuls les appels valides et leurs résultats correspondants sont conservés ensemble. Une reprise après erreur a été observée avec un vrai modèle.
+- Diagnostics : l’erreur de la tâche courante est conservée et affichée, sans être remplacée par un ancien rapport de réussite. Les historiques générés par l’application sont exclus du contexte récupéré par défaut ; notes, mémoire et lectures explicites restent disponibles.
+- Contrôles : **902 tests natifs réussis, 0 échec, 18 ignorés** ; **33 tests d’interface + TypeScript**, **135 tests voix**. Installateur et exécutable installé signés, autotest installé **18/18**. Mise à niveau silencieuse réussie, avec empreintes des **2 projets, 30 conversations et 319 messages** contrôlés exactement conservées. Aucun test de désinstallation/réinstallation.
+
+**Limites : les essais réels 6 à 10 ont échoué ; l’autonomie complète n’est pas validée.** Le dixième essai a repris après des appels incorrects, mais n’a livré que des tests erronés, sans module fonctionnel : le jalon de réalisation reste non atteint. Qwopus 9B Coder reste limité dans les conditions essayées. PWA/HTTPS sont déjà livrés en 1.3.17 ; validation physique téléphone et annulation acoustique d’écho non établies. API Anthropic directe et Moshi/Kyutai intégré absents. Voir `LIMITES_V1_3_18.md` pour les empreintes et la portée des preuves.
+
 ## V1.3.17 — 3 novembre 2026
 **Application mobile installable et conversation vocale reliée au chat.**
 - Ajout à l’écran d’accueil sur Android/iPhone, avec guide d’installation et écran de reconnexion.
