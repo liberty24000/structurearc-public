@@ -2,6 +2,14 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.42 — 5 novembre 2026 — Démarrage vocal mobile et échanges courts
+
+- Correction d'une annonce du moteur de reconnaissance rejetée à tort par la page mobile, malgré un moteur PC fonctionnel.
+- Contexte allégé pour les salutations et tests micro; les demandes de travail conservent leurs outils. Diagnostics du premier texte et du premier audio sans paroles privées.
+- 163 tests vocaux, vérification TypeScript, 18 autotests du binaire installé et parcours vocal dans un vrai Chrome réussis. Microphone et réponse synthétiques; aucun gain acoustique Android garanti.
+- Mise à niveau signée avec conservation des projets, conversations, certificat et associations. Packs GPU locaux séparés de l'installateur; voix française féminine Moshi conservée lorsqu'ils sont installés.
+- La 1.3.41 intermédiaire n'a pas été publiée. Les travaux de conversation continue restent à développer et mesurer.
+
 ## V1.3.39 — 4 novembre 2026 — Microphone, réouverture mobile et latence
 
 - Dans l’écran vocal, un bouton permet de couper et réactiver le microphone tout en continuant à écouter la réponse. Il ne suspend pas les actions du chat. La phrase déjà prononcée peut encore être transcrite ; les nouveaux échantillons sont remplacés par du silence lorsque le microphone est coupé.
