@@ -2,6 +2,11 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.34 — 4 novembre 2026
+
+Les questions affichent des choix numérotés avec la première option recommandée. En mode Auto, les décisions de méthode sont prises automatiquement et le chat poursuit le travail ; plusieurs anciennes questions peuvent être résolues avant une seule reprise. Les décisions restent explicitement marquées comme automatiques dans l’historique. Une information indispensable inconnue peut toujours nécessiter une réponse humaine. Validation : 1 054 tests natifs et 505 tests d’interface réussis ; cela ne démontre pas l’autonomie universelle des modèles. Voir les limites détaillées de la version.
+
+
 ## V1.3.20 — 3 novembre 2026
 
 **Fournisseur Claude facultatif dans le chat, installation mobile corrigée et disponibilité vocale mieux suivie.**
