@@ -7,10 +7,11 @@ Application de bureau pour Windows 11 (x64) : travailler sur vos projets avec de
 > **Ce dépôt ne contient que les publications** (installateurs signés en pièces jointes de Release, empreintes, notes et limites de chaque version). Aucun code source n'est publié ici.
 
 ## Télécharger
-Dernière version : **1.3.31** — page *Releases* → `StructureArc_1.3.31_x64-setup.exe`. Vérifiez toujours la signature et l'empreinte : voir [VERIFIER.md](VERIFIER.md).
+Dernière version : **1.3.32** — page *Releases* → `StructureArc_1.3.32_x64-setup.exe`. Vérifiez toujours la signature et l'empreinte : voir [VERIFIER.md](VERIFIER.md).
 
 | Version | Installateur signé | Taille | SHA-256 | Détails |
 |---|---|---|---|---|
+| 1.3.32 | `StructureArc_1.3.32_x64-setup.exe` | 23.2 Mo | `af310a74b18561ef…` | [notes et limites](versions/v1.3.32/) |
 | 1.3.31 | `StructureArc_1.3.31_x64-setup.exe` | 23.2 Mo | `22455e5311178c30…` | [notes et limites](versions/v1.3.31/) |
 | 1.3.28 | `StructureArc_1.3.28_x64-setup.exe` | 23.2 Mo | `9d1b0a718d976bde…` | [notes et limites](versions/v1.3.28/) |
 | 1.3.27 | `StructureArc_1.3.27_x64-setup.exe` | 23.2 Mo | `c3cc4e0652048832…` | [notes et limites](versions/v1.3.27/) |
@@ -22,6 +23,7 @@ Dernière version : **1.3.31** — page *Releases* → `StructureArc_1.3.31_x64-
 | 1.3.18 | `StructureArc_1.3.18_x64-setup.exe` | 22.9 Mo | `1d4f876199befa4a…` | [notes et limites](versions/v1.3.18/) |
 | 1.3.17 | `StructureArc_1.3.17_x64-setup.exe` | 22.9 Mo | `33e769a17e47560f…` | [notes et limites](versions/v1.3.17/) |
 | 1.3.16 | `StructureArc_1.3.16_x64-setup.exe` | 22.8 Mo | `36de85b95d717e28…` | [notes et limites](versions/v1.3.16/) |
+| 1.3.15 | `StructureArc_1.3.15_x64-setup.exe` | 22.7 Mo | `c8d9505ebbbfba6b…` | [notes et limites](versions/v1.3.15/) |
 | 1.3.13 | `StructureArc_1.3.13_x64-setup.exe` | 22.7 Mo | `49dfff31265701eb…` | [notes et limites](versions/v1.3.13/) |
 | 1.3.12 | `StructureArc_1.3.12_x64-setup.exe` | 22.7 Mo | `48a0e0e4f246e93c…` | [notes et limites](versions/v1.3.12/) |
 | 1.3.11 | `StructureArc_1.3.11_x64-setup.exe` | 22.7 Mo | `ea80b00f2e4989e9…` | [notes et limites](versions/v1.3.11/) |
@@ -67,7 +69,7 @@ Détails, preuves et ce que nous ne prétendons pas : **[POURQUOI.md](POURQUOI.m
 
 ## État honnête
 - Testé sur **un seul** ordinateur (Windows 11, 32 Go, GTX 1070). Chaque version a son fichier de limites (`LIMITES_*.md`) : lisez-le avant d'installer.
-- Pour la version publique **1.3.31**, le modèle n'est pas inclus dans l'installateur standard ; il est installé ou importé par l'utilisateur, avec vérification d'empreinte. Un éventuel installateur hors-ligne en développement n'est pas une publication.
+- Pour la version publique **1.3.32**, le modèle n'est pas inclus dans l'installateur standard ; il est installé ou importé par l'utilisateur, avec vérification d'empreinte. Un éventuel installateur hors-ligne en développement n'est pas une publication.
 - Usage gratuit, sans exploitation commerciale par autrui : voir [LICENSE.md](LICENSE.md).
 
 ## Édité par
