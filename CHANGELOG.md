@@ -2,6 +2,14 @@
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
 
+## V1.3.39 — 4 novembre 2026 — Microphone, réouverture mobile et latence
+
+- Dans l’écran vocal, un bouton permet de couper et réactiver le microphone tout en continuant à écouter la réponse. Il ne suspend pas les actions du chat. La phrase déjà prononcée peut encore être transcrite ; les nouveaux échantillons sont remplacés par du silence lorsque le microphone est coupé.
+- La page de connexion recherche une session existante avant de demander un nouveau lien. Cela couvre notamment une première navigation sans cookie Strict et un ancien lien de lancement expiré. La connexion reste révocable ; aucun jeton n’est placé dans le stockage JavaScript.
+- Le pack Moshi féminin transmet des fragments de 400 ms au lieu de 800 ms. Sur trois phrases synthétiques locales, le premier fragment arrive vers 1,61 s, contre 1,96–1,99 s auparavant. Aucun trou entre fragments n’a été calculé dans ces trois essais. Une variante plus agressive a été rejetée car elle créait des coupures.
+- Whisper utilise jusqu’à six fils de calcul, dans la moitié des processeurs disponibles, avec un plafond global CPU de 50 %. Son modèle français, sa recherche de transcription et sa tolérance aux pauses restent identiques. Cela ne garantit pas une latence totale donnée : le modèle du chat et la charge du PC interviennent aussi.
+- Validation : 181 tests ciblés interface/voix/mobile/chat ; récupération de session après fermeture complète de Chrome, navigation externe et ancien lien, sans récupérer un appareil révoqué. Les tests navigateur utilisent des appareils audio synthétiques. L’utilisateur a confirmé le son sur Android avec la version 1.3.38 ; les nouveaux parcours physiques restent à confirmer après mise à jour.
+
 ## V1.3.34 — 4 novembre 2026
 
 Les questions affichent des choix numérotés avec la première option recommandée. En mode Auto, les décisions de méthode sont prises automatiquement et le chat poursuit le travail ; plusieurs anciennes questions peuvent être résolues avant une seule reprise. Les décisions restent explicitement marquées comme automatiques dans l’historique. Une information indispensable inconnue peut toujours nécessiter une réponse humaine. Validation : 1 054 tests natifs et 505 tests d’interface réussis ; cela ne démontre pas l’autonomie universelle des modèles. Voir les limites détaillées de la version.

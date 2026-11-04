@@ -1,0 +1,16 @@
+> *Note : ce texte provient du paquet de livraison complet. Les renvois à `preuves/`, `docs/` ou `test.ps1` désignent des éléments conservés par le titulaire, non publiés dans ce dépôt.*
+
+# Limites — StructureArc 1.3.39
+
+- La voix est une synthèse neuronale française, pas une voix humaine en direct. Le résultat dépend du texte, des noms propres et de la ponctuation. La naturalité ne se déduit pas d’un test automatique.
+- Le moteur est chargé à l'activation du mode vocal. Moshi a demandé environ 12 à 31 secondes de préparation dans les essais du poste de référence. Pocket livre des phrases complètes ; le pack Moshi transmet des fragments. Il s'agit de synthèse française via Moshi, pas d'un modèle de dialogue français audio-à-audio. Le modèle de chat choisi reste responsable de la réponse.
+- La reconnaissance reste Whisper base français par segments. Le bruit, l’écho du haut-parleur, la distance et le microphone du téléphone peuvent dégrader sa précision. L’essai natif sans microphone ne remplace pas un essai acoustique sur Android.
+- Les ressources Pocket ajoutent environ 820 Mo à l'installation de base, avec deux fils CPU et un plafond de 3 Gio. Le pack Moshi séparé occupe 8,58 Go, demande un GPU NVIDIA compatible et au moins 5 Gio de mémoire GPU libre au démarrage. Son plafond de mémoire engagée Windows est de 12 Gio après mesure d'un pic de démarrage de 9,14 Gio. Il n'est pas embarqué dans l'installateur de base. Le partage du GPU avec de gros modèles de chat locaux reste à qualifier ; aucun fonctionnement simultané universel n'est annoncé.
+- Treize essais réels du projet de qualification local ont été terminés sur les cinq modèles installés ; aucun n’a satisfait tous les contrôles indépendants. Les tests du logiciel ne prouvent pas une autonomie universelle des modèles. La reformulation de plan ne corrige pas à elle seule les erreurs sémantiques.
+- La consolidation de mémoire est interrompable entre lots ; un lot SQL ou une analyse individuelle n’est pas préempté. Les gains de qualité du modèle ne sont pas établis par les seules mesures de réveil.
+- L'installation Android Chrome et la confiance envers le certificat local ont été confirmées par l'utilisateur le 4 novembre 2026. Cette confirmation précède la mise à jour Moshi : elle ne démontre pas une correction par cette version ni une compatibilité universelle avec tous les téléphones. Le son a ensuite été confirmé sur téléphone avec la version 1.3.38. L’interruption acoustique et les corrections 1.3.39 restent à qualifier physiquement. Les journaux bornés ne couvrent pas toutes les erreurs internes d'Android.
+
+- La réduction de latence Moshi mesure le délai entre un texte déjà prêt et le premier fragment, pas le délai total après votre parole. Aucun dialogue instantané n’est promis. La synthèse GPU reste un pack séparé de l’installateur de base.
+- La récupération de connexion ne recrée pas un appareil révoqué et ne restaure pas un cookie effacé, un profil privé ou un changement d’adresse du PC.
+
+Installateur signé SHA-256 : `409c7ebead3e6cbdd3e660459eabddeaafe385ee80d678040114233b9a02c9f7`. Application installée SHA-256 : `a05f0ae0d2bf357590f06ac0feefc2d307ae0636a940b73221faaa956dc07ff9`. La mise à niveau existante est vérifiée ; un aller-retour de désinstallation isolée n’a pas été rejoué.
