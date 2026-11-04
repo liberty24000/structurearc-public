@@ -7,10 +7,11 @@ Application de bureau pour Windows 11 (x64) : travailler sur vos projets avec de
 > **Ce dépôt ne contient que les publications** (installateurs signés en pièces jointes de Release, empreintes, notes et limites de chaque version). Aucun code source n'est publié ici.
 
 ## Télécharger
-Dernière version : **1.3.24** — page *Releases* → `StructureArc_1.3.24_x64-setup.exe`. Vérifiez toujours la signature et l'empreinte : voir [VERIFIER.md](VERIFIER.md).
+Dernière version : **1.3.27** — page *Releases* → `StructureArc_1.3.27_x64-setup.exe`. Vérifiez toujours la signature et l'empreinte : voir [VERIFIER.md](VERIFIER.md).
 
 | Version | Installateur signé | Taille | SHA-256 | Détails |
 |---|---|---|---|---|
+| 1.3.27 | `StructureArc_1.3.27_x64-setup.exe` | 23.2 Mo | `c3cc4e0652048832…` | [notes et limites](versions/v1.3.27/) |
 | 1.3.24 | `StructureArc_1.3.24_x64-setup.exe` | 23.1 Mo | `dfdde21ae0fbe288…` | [notes et limites](versions/v1.3.24/) |
 | 1.3.23 | `StructureArc_1.3.23_x64-setup.exe` | 23.1 Mo | `94fe55744bb3712e…` | [notes et limites](versions/v1.3.23/) |
 | 1.3.21 | `StructureArc_1.3.21_x64-setup.exe` | 23.1 Mo | `335425c0b5f12fe1…` | [notes et limites](versions/v1.3.21/) |
@@ -64,7 +65,7 @@ Détails, preuves et ce que nous ne prétendons pas : **[POURQUOI.md](POURQUOI.m
 
 ## État honnête
 - Testé sur **un seul** ordinateur (Windows 11, 32 Go, GTX 1070). Chaque version a son fichier de limites (`LIMITES_*.md`) : lisez-le avant d'installer.
-- Pour la version publique **1.3.24**, le modèle n'est pas inclus dans l'installateur standard ; il est installé ou importé par l'utilisateur, avec vérification d'empreinte. Un éventuel installateur hors-ligne en développement n'est pas une publication.
+- Pour la version publique **1.3.27**, le modèle n'est pas inclus dans l'installateur standard ; il est installé ou importé par l'utilisateur, avec vérification d'empreinte. Un éventuel installateur hors-ligne en développement n'est pas une publication.
 - Usage gratuit, sans exploitation commerciale par autrui : voir [LICENSE.md](LICENSE.md).
 
 ## Édité par
