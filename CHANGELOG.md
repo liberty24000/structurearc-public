@@ -1,3 +1,7 @@
+## V1.3.43 — 5 novembre 2026 — Fluidité vocale
+
+Version signée, installée et vérifiée : une phrase vocale préparée en avance, buffer limité et invalidation lors d’une interruption. 169 tests vocaux passent. Vrai Chrome sur le backend HTTPS installé : reconnaissance synthétique, sortie audio mesurée, préparation anticipée observée et ressources servies identiques au build. 18 autotests et contrôle du certificat, des associations et des données personnelles réussis. Sur un petit essai comparatif, silence médian entre phrases de 1835 à 869 ms; premier audio inchangé. Ce résultat ne mesure pas une conversation acoustique Android ni un modèle de chat.
+
 # Journal des versions de StructureArc
 
 Ce journal décrit, version par version, ce qui change pour l'utilisateur. Chaque version a aussi un fichier **LIMITES** qui dit sans détour ce qui a été prouvé et ce qui ne l'a pas été. Tous les installateurs publiés ici sont **signés** (Authenticode) : vérifiez toujours la signature et l'empreinte SHA-256 (voir `VERIFIER.md`).
