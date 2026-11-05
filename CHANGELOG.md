@@ -1,3 +1,7 @@
+## V1.3.56 — 5 novembre 2026 — Étapes et diagnostics dans le contexte
+
+Version signée, installée et vérifiée : consigne d'étape prioritaire après les rapports, preuves des livrables nommés, contrôle des commandes réellement réussies et diagnostics d'édition conservés lors du compactage. L'optimisation reste automatique. Le projet complet sur le petit modèle testé reste non qualifié ; les mesures de contexte ne constituent pas une preuve de réussite fonctionnelle.
+
 ## V1.3.54 — 5 novembre 2026 — Contexte et reprise locale
 
 Le contexte s’optimise automatiquement. Les actions nécessaires conservent leur format structuré après une erreur locale et les fragments de fichier demandent plus tôt leur continuation. Les projets, conversations, voix installées et connexions mobiles sont conservés. Les tests de régression et contrôles installés réussissent ; le projet complet sur le petit modèle local reste non qualifié, avec tests incomplets et documentation manquante.
