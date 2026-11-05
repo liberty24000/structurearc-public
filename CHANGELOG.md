@@ -1,3 +1,7 @@
+## V1.3.57 — 5 novembre 2026 — Vérifications des scripts et stabilité HTTPS
+
+Version signée, installée et vérifiée : les erreurs de syntaxe Node ne peuvent plus être effacées par une simple relecture ou un contrôle incomplet du seul fichier principal. Les accès au coffre Windows sont coordonnés. Régression : 1 157 tests natifs réussis (26 ignorés), 557 tests d’interface et TypeScript. Navigation Chrome vérifiée sur quatre tailles, avec moteur de données simulé. Le projet complet sur le petit modèle reste non qualifié ; aucun nouvel essai Android physique ou acoustique revendiqué.
+
 ## V1.3.56 — 5 novembre 2026 — Étapes et diagnostics dans le contexte
 
 Version signée, installée et vérifiée : consigne d'étape prioritaire après les rapports, preuves des livrables nommés, contrôle des commandes réellement réussies et diagnostics d'édition conservés lors du compactage. L'optimisation reste automatique. Le projet complet sur le petit modèle testé reste non qualifié ; les mesures de contexte ne constituent pas une preuve de réussite fonctionnelle.
