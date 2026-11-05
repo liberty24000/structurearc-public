@@ -1,3 +1,7 @@
+## V1.3.58 — 5 novembre 2026 — Contexte et précisions conservées
+
+Version signée, installée et vérifiée : les précisions reçues en fin de réponse survivent aux compressions automatiques suivantes. Réparation de fragments guidée par les contrôles échoués ; admission des modèles distinguant RAM physique et mémoire engagée Windows. 1 160 tests natifs réussis, 26 ignorés. Les sources UI sont identiques à celles des 557 tests précédents. Les projets complets locaux restent non qualifiés.
+
 ## V1.3.57 — 5 novembre 2026 — Vérifications des scripts et stabilité HTTPS
 
 Version signée, installée et vérifiée : les erreurs de syntaxe Node ne peuvent plus être effacées par une simple relecture ou un contrôle incomplet du seul fichier principal. Les accès au coffre Windows sont coordonnés. Régression : 1 157 tests natifs réussis (26 ignorés), 557 tests d’interface et TypeScript. Navigation Chrome vérifiée sur quatre tailles, avec moteur de données simulé. Le projet complet sur le petit modèle reste non qualifié ; aucun nouvel essai Android physique ou acoustique revendiqué.
