@@ -1,3 +1,7 @@
+## V1.3.54 — 5 novembre 2026 — Contexte et reprise locale
+
+Le contexte s’optimise automatiquement. Les actions nécessaires conservent leur format structuré après une erreur locale et les fragments de fichier demandent plus tôt leur continuation. Les projets, conversations, voix installées et connexions mobiles sont conservés. Les tests de régression et contrôles installés réussissent ; le projet complet sur le petit modèle local reste non qualifié, avec tests incomplets et documentation manquante.
+
 ## V1.3.48 — 5 novembre 2026 — Reprise locale avec changement de stratégie
 
 Après une réponse locale incomplète, la reprise demande des appels séquentiels sans raisonnement supplémentaire, puis rétablit le profil normal. Les diagnostics sont plus précis sans conserver les fragments rejetés. Version signée, installée et vérifiée : 1 108 tests natifs, 18 autotests installés, cinq dimensions dans Chrome et vocal français local avec entrée synthétique. Projets et connexion mobile conservés.
