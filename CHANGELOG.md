@@ -1,3 +1,9 @@
+## V1.3.48 — 5 novembre 2026 — Reprise locale avec changement de stratégie
+
+Après une réponse locale incomplète, la reprise demande des appels séquentiels sans raisonnement supplémentaire, puis rétablit le profil normal. Les diagnostics sont plus précis sans conserver les fragments rejetés. Version signée, installée et vérifiée : 1 108 tests natifs, 18 autotests installés, cinq dimensions dans Chrome et vocal français local avec entrée synthétique. Projets et connexion mobile conservés.
+
+La réalisation autonome du projet local testé reste en échec : tests et documentation manquent. Cette version ne garantit pas la réussite de tout projet, et la cohabitation du modèle 9B avec la voix sur 8 Go de mémoire graphique reste à qualifier.
+
 ## V1.3.47 — 5 novembre 2026 — Consignes conservées et clavier mobile
 
 Les précisions données pendant le travail d'une équipe sont conservées pour les agents suivants et les reprises du même cycle. Le clavier ne confond plus la confirmation d'une composition avec l'envoi du message. Les permissions et vérifications restent effectives.
