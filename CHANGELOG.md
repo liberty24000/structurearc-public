@@ -1,3 +1,17 @@
+## V1.3.47 — 5 novembre 2026 — Consignes conservées et clavier mobile
+
+Les précisions données pendant le travail d'une équipe sont conservées pour les agents suivants et les reprises du même cycle. Le clavier ne confond plus la confirmation d'une composition avec l'envoi du message. Les permissions et vérifications restent effectives.
+
+Version signée, installée et vérifiée : 1 106 tests natifs, 552 tests d'interface, 18 autotests installés ; navigation et saisie sur cinq tailles dans Chrome ; réponse vocale locale et interruption avec une entrée synthétique. Données personnelles et connexion mobile préservées. Ces essais ne remplacent pas une validation acoustique sur téléphone. Le démarrage vocal à froid reste lent, et le modèle local testé n'est pas encore qualifié pour le projet complet.
+
+## V1.3.46 — 5 novembre 2026 — Chat mobile plus lisible
+
+Le champ de message s'adapte au texte, le bouton Activité rejoint la navigation et l'accueil est plus compact en paysage. Une sous-étape bloquée dans des relectures peut bénéficier d'une reprise automatique ciblée, sans perdre les étapes déjà terminées. Version signée, installée, vérifiée et publiée. Les essais locaux de projet complet restent non qualifiés.
+
+## V1.3.45 — 5 novembre 2026 — Reprises et décisions conservées
+
+Les sous-étapes conservent leurs résultats et les décisions de l'utilisateur. Les erreurs de protocole et certains bilans incohérents disposent d'une reprise ciblée ; les contrôles finaux restent obligatoires. Version signée, installée, vérifiée et publiée. Ces corrections ne garantissent pas la réussite de tout projet avec tout modèle.
+
 ## V1.3.44 — 5 novembre 2026 — Navigation mobile et reprise
 
 Version signée, installée et relancée. Le chat mobile permet de changer de projet et d’ouvrir une discussion générale séparée. Les parcours réels dans Chrome sur le backend installé passent sur cinq dimensions, avec conservation de l’espace après rechargement et saisie toujours visible. 1089 tests natifs (25 essais explicites ignorés), 170 tests UI, 169 tests vocaux et 18 autotests du binaire installé réussissent. La voix française locale, l’interruption, la reprise, le certificat et les associations sont vérifiés; les 2 projets, 74 discussions et 755 messages existants sont conservés à l’identique. Microphone et réponse vocale synthétiques; pas de mesure acoustique Android. La reprise bornée du contexte et la régulation CPU sont intégrées. Le dernier essai Qwen4B produit trois fichiers sans annulation CPU mais reste incomplet : l’autonomie sur projet complet n’est pas qualifiée.
