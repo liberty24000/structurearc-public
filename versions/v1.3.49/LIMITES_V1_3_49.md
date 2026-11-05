@@ -1,0 +1,22 @@
+> *Note : ce texte provient du paquet de livraison complet. Les renvois à `preuves/`, `docs/` ou `test.ps1` désignent des éléments conservés par le titulaire, non publiés dans ce dépôt.*
+
+# Limites — StructureArc 1.3.49
+
+- La reprise d'un appel local incomplet reste unique par tour. Elle change le profil demandé au runtime, sans garantir que le modèle réussira. Une nouvelle erreur est signalée ; aucun résultat incomplet n'est exécuté et aucune permission supplémentaire n'est accordée.
+- Le profil de reprise concerne le fournisseur local. Les modèles cloud conservent leur protocole existant. Les mécanismes de raisonnement et de parallélisme habituels sont rétablis après une réponse complète.
+- La reprise du scénario Qwopus9B P2 r04 sous le code de la 1.3.47 a échoué après 754806 ms sur deux limites de sortie consécutives. Deux sous-étapes sur six étaient terminées et README.md manquait. Le vérificateur indépendant a échoué. Les fichiers du modèle n'ont pas été réparés par le relecteur.
+- L'essai frais P2 r05 du candidat 1.3.48 s'est arrêté après 418362 ms sur des relectures sans progression avec un contrôle échoué. Le plan de dix étapes ne respectait pas le format admis. Seuls cli.cjs et package.json étaient présents ; le parsing des arguments échoue aussi dans le contrôle externe. Aucune reprise de protocole n'a eu lieu dans cet essai : il ne mesure donc pas l'efficacité de cette correction sur un vrai modèle.
+- Aucun modèle local n'est déclaré capable de réaliser tout projet. Les critères de qualification par scénarios et essais répétés restent ouverts.
+- Les précisions d'équipe sont limitées au cycle natif concerné, aux messages admis avec provenance et au budget de contexte. Une session active est nécessaire à leur admission. Les adaptateurs CLI externes ne sont pas couverts par cette transmission.
+- Les parcours mobiles vérifiés dans Chrome sur PC et les entrées audio synthétiques ne remplacent pas un essai physique sur Android. Le démarrage à froid du moteur vocal peut prendre plusieurs dizaines de secondes ; aucune latence instantanée n'est promise.
+- La cohabitation du modèle local 9B et de Kyutai sur 8 Go de mémoire graphique n'est pas qualifiée : le modèle chargé ne laissait qu'environ 3 Go libres, sous le seuil de 5 Go exigé par le moteur vocal installé. Les essais vocaux de livraison restent séparés de cette combinaison.
+- Les modèles et packs vocaux locaux dépendent des ressources disponibles. Un nombre illimité d'agents ou de modèles simultanés n'est pas garanti.
+- Le subconscient reste un service de mémoire et de consolidation vérifiable, sans conscience ou sentiments humains affirmés.
+
+- L'essai P2 r07 a produit les quatre fichiers demandés en 1707541 ms, mais le vérificateur indépendant échoue : la commande add provoque une ReferenceError. Le modèle avait créé un lanceur de tests qui absorbait les exceptions et renvoyait zéro malgré les échecs affichés. Cinq sous-étapes sur six sont enregistrées ; la dernière stagne. Aucun fichier du modèle n'a été réparé par le relecteur.
+- La correction des contrôles contradictoires conserve le code réel du processus. Elle peut retenir un contrôle pour examen lorsque des marqueurs de test sont imprimés ; elle ne prouve pas à elle seule la justesse de tests écrits par le modèle. Les erreurs non détectées par ces marqueurs restent possibles.
+- Les outils project_plan et files_edit sont vérifiés par régressions natives. Le modèle de l'essai r07 ne les a pas utilisés ; leur efficacité sur cet essai réel n'est donc pas démontrée.
+- Le temps affiché dans le chat mesure l'attente du cycle dans cette vue, pas un pourcentage de calcul ni une garantie de réussite. La validation du projet reste distincte des rapports de sous-étapes.
+
+- L’essai frais P2 r08 échoue après 666251 ms : test.cjs manque et le vérificateur indépendant échoue. Le runtime local sature sa fenêtre (8191 jetons sur 8192), coupant une sortie à 1876 jetons malgré 3000 demandés. La réservation effective du contexte reste à corriger. Aucun livrable du modèle n’a été réparé par le relecteur. Les outils project_plan et files_edit ne sont pas utilisés dans cet essai.
+- Cette version a passé 1117 tests natifs (25 ignorés), 557 tests d’interface et 18 contrôles de l’exécutable installé. Les essais vocaux complets de la 1.3.48 restent des preuves de cette version antérieure ; seuls les fichiers vocaux installés sont à nouveau vérifiés ici. Aucun nouvel essai physique Android n’est revendiqué.
