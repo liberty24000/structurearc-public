@@ -1,3 +1,7 @@
+## V1.3.59 — 6 novembre 2026 — Pilotage autonome et contrôles persistants
+
+Version signée, installée et vérifiée : les agents conservent leurs contrôles non validés entre tentatives et lors des précisions utilisateur. Une reprise native bornée reprend ces obligations sans oublier les étapes terminées. Les commandes de test dans des dossiers différents restent distinctes. 1 164 tests natifs réussis, 26 ignorés ; sources UI identiques aux 557 tests précédents. La qualification globale des projets reste ouverte.
+
 ## V1.3.58 — 5 novembre 2026 — Contexte et précisions conservées
 
 Version signée, installée et vérifiée : les précisions reçues en fin de réponse survivent aux compressions automatiques suivantes. Réparation de fragments guidée par les contrôles échoués ; admission des modèles distinguant RAM physique et mémoire engagée Windows. 1 160 tests natifs réussis, 26 ignorés. Les sources UI sont identiques à celles des 557 tests précédents. Les projets complets locaux restent non qualifiés.
