@@ -1,3 +1,7 @@
+## V1.3.62 — 6 novembre 2026 — Navigation mobile et cadrage des sous-tâches
+
+Version signée, installée et vérifiée : sélection d'un chat ferme le tiroir et affiche le chat depuis tout écran ; boutons mobiles de décision plus accessibles. Le Harness précise l'étape courante sans perdre le contrat global et conserve les outils de diagnostic après un contrôle échoué. 1 180 tests natifs et 559 tests UI réussis ; essai réel Qwen 4B : NOT_QUALIFIED. Aucun nouvel essai physique Android ou acoustique.
+
 ## V1.3.61 — 6 novembre 2026 — Continuité des sous-tâches et réparations
 
 Version signée, installée et vérifiée : mode de réparation lié à la sous-tâche native, environnement d’exécution explicite, correction des dépendances autorisée avec recontrôle et notification de mise à jour réussie distincte d’une erreur. 1 177 tests natifs et 557 tests UI réussis. Projet réel Qwen 4B : NOT_QUALIFIED ; objectif et vérificateur conservés, aucune réparation par le réviseur.
