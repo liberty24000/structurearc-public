@@ -1,3 +1,7 @@
+## V1.3.61 — 6 novembre 2026 — Continuité des sous-tâches et réparations
+
+Version signée, installée et vérifiée : mode de réparation lié à la sous-tâche native, environnement d’exécution explicite, correction des dépendances autorisée avec recontrôle et notification de mise à jour réussie distincte d’une erreur. 1 177 tests natifs et 557 tests UI réussis. Projet réel Qwen 4B : NOT_QUALIFIED ; objectif et vérificateur conservés, aucune réparation par le réviseur.
+
 ## V1.3.60 — 6 novembre 2026 — Contexte et reprises du pilotage autonome
 
 Version signée, installée et vérifiée : lectures utiles préservées, relectures possibles après retrait du contexte, livrables mieux distingués des technologies, méthodes de contrôle JSON vérifiées, contrôle syntaxique des modules Node et écritures locales adaptées. 1 174 tests natifs réussis ; essai réel Qwen 4B : NOT_QUALIFIED. Ce résultat ne qualifie pas tous les projets et modèles. Aucun nouvel écran de configuration.
