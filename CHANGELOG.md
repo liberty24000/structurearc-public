@@ -1,3 +1,7 @@
+## V1.3.60 — 6 novembre 2026 — Contexte et reprises du pilotage autonome
+
+Version signée, installée et vérifiée : lectures utiles préservées, relectures possibles après retrait du contexte, livrables mieux distingués des technologies, méthodes de contrôle JSON vérifiées, contrôle syntaxique des modules Node et écritures locales adaptées. 1 174 tests natifs réussis ; essai réel Qwen 4B : NOT_QUALIFIED. Ce résultat ne qualifie pas tous les projets et modèles. Aucun nouvel écran de configuration.
+
 ## V1.3.59 — 6 novembre 2026 — Pilotage autonome et contrôles persistants
 
 Version signée, installée et vérifiée : les agents conservent leurs contrôles non validés entre tentatives et lors des précisions utilisateur. Une reprise native bornée reprend ces obligations sans oublier les étapes terminées. Les commandes de test dans des dossiers différents restent distinctes. 1 164 tests natifs réussis, 26 ignorés ; sources UI identiques aux 557 tests précédents. La qualification globale des projets reste ouverte.
